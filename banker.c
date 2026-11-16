@@ -247,7 +247,13 @@ int main (int argc, char* argv[]){
             }
 
             if (excedeu == 1){
-                printf("Pedido excede o limite do cliente\n");
+                fprintf(resultado_arquivo, "The customer %d request", cliente);
+
+                for (int i =0; i<recursos; i++){
+                    fprintf(resultado_arquivo, " %d", pedido[i]);
+                }
+
+                fprintf(resultado_arquivo, " was denied because exceed its maximum allocation\n");
                 continue;
             }
 
@@ -262,7 +268,19 @@ int main (int argc, char* argv[]){
             }
 
             if (insuficiente == 1){
-                printf("Recursos insuficientes\n");
+                fprintf(resultado_arquivo, "The resources");
+
+                for (int i =0; i<recursos; i++){
+                    fprintf(resultado_arquivo, " %d", vetor[i]);
+                }
+
+                fprintf(resultado_arquivo, " are not enough to customer %d request", cliente);
+
+                for (int i =0; i<recursos; i++){
+                    fprintf(resultado_arquivo, " %d", pedido[i]);
+                }
+
+                fprintf(resultado_arquivo, " \n");
                 continue;
             }
 
@@ -279,7 +297,13 @@ int main (int argc, char* argv[]){
                 }
 
                 if (resultado == 1){
-                    printf("Pedido negado: estado inseguro\n");
+                    fprintf(resultado_arquivo, "The customer %d request", cliente);
+
+                    for (int i =0; i<recursos; i++){
+                        fprintf(resultado_arquivo, " %d", pedido[i]);
+                    }
+
+                    fprintf(resultado_arquivo, " was denied because result in an unsafe state\n");
                     continue;
                 }
 
@@ -296,7 +320,13 @@ int main (int argc, char* argv[]){
                 }
             }
 
-            printf("Pedido aprovado\n");
+            fprintf(resultado_arquivo, "Allocate to customer %d the resources", cliente);
+
+            for (int i =0; i<recursos; i++){
+                fprintf(resultado_arquivo, " %d", pedido[i]);
+            }
+
+            fprintf(resultado_arquivo, "\n");
 
 
         }
@@ -321,7 +351,13 @@ int main (int argc, char* argv[]){
                 vetor[i] += pedido[i];
             }
 
-            printf("Recursos liberados\n");
+            fprintf(resultado_arquivo, "Release from customer %d the resources", cliente);
+
+            for (int i =0; i<recursos; i++){
+                fprintf(resultado_arquivo, " %d", pedido[i]);
+            }
+
+            fprintf(resultado_arquivo, "\n");
         }
 
         
