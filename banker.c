@@ -343,7 +343,7 @@ int main (int argc, char* argv[]){
             }
 
             if (excedeu == 1){
-                fprintf(resultado_arquivo, "The customer %d cannot release resources that were not allocated\n", cliente);
+                fprintf(stderr, "Error: customer %d cannot release resources that were not allocated\n", cliente);
                 continue;
             }
 
