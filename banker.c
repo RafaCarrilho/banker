@@ -284,6 +284,29 @@ int main (int argc, char* argv[]){
 
 
         }
+        //parte do RL
+        if (strcmp(tipo, "RL") == 0){
+            int excedeu = 0;
+
+            for (int i =0; i<recursos; i++){
+                if (pedido[i] > allocation[cliente][i]){
+                    excedeu = 1;
+                    break;
+                }
+            }
+
+            if (excedeu == 1){
+                printf("Cliente tentando liberar mais recursos do que possui\n");
+                continue;
+            }
+
+            for (int i =0; i<recursos; i++){
+                allocation[cliente][i] -= pedido[i];
+                vetor[i] += pedido[i];
+            }
+
+            printf("Recursos liberados\n");
+        }
 
         
         
