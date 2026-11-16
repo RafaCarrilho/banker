@@ -23,7 +23,7 @@ static void liberar_matriz(int **m, int n){
 
 int main (int argc, char* argv[]){
     if (argc <=1){
-        fprintf (stderr, "faltou argumento");
+        fprintf (stderr, "Error: missing resource arguments\n");
         return 1;
     }
 
@@ -31,7 +31,7 @@ int main (int argc, char* argv[]){
     int* vetor = (int*) malloc (recursos* sizeof(int));
 
     if (vetor == NULL){
-        fprintf (stderr, "malloc deu errado boy");
+        fprintf (stderr, "Error: memory allocation failed\n");
         return 1;
     }
 
@@ -42,31 +42,31 @@ int main (int argc, char* argv[]){
         long int valor = strtol (argv[i], &sobra, 10);
 
         if (errno == ERANGE) {
-            fprintf(stderr, "Erro: numero fora do intervalo permitido.\n");
+            fprintf(stderr, "Error: number out of allowed range\n");
             free(vetor);
             return 1;
         }
 
         if (sobra == argv[i]) {
-            fprintf(stderr, "Erro: argumento sem numero.\n");
+            fprintf(stderr, "Error: argument is not a number\n");
             free(vetor);
             return 1;
         }
 
         if (*sobra != '\0'){
-            fprintf (stderr, "teve lixo no input");
+            fprintf (stderr, "Error: invalid resource argument\n");
             free(vetor);
             return 1;
         }
 
         if (valor < 0){
-            fprintf (stderr, "teve lixo no input");
+            fprintf (stderr, "Error: resource values cannot be negative\n");
             free(vetor);
             return 1;
         }
 
         if (valor > INT_MAX){
-            fprintf (stderr, "teve lixo no input");
+            fprintf (stderr, "Error: resource value exceeds INT_MAX\n");
             free(vetor);
             return 1;
         }
@@ -78,7 +78,7 @@ int main (int argc, char* argv[]){
     FILE *arquivo = fopen("customer.txt", "r");
 
     if (arquivo == NULL) {
-        fprintf(stderr, "Erro ao abrir customer.txt\n");
+        fprintf(stderr, "Error: could not open customer.txt\n");
         free(vetor);
         return 1;
     }
@@ -93,21 +93,27 @@ int main (int argc, char* argv[]){
 
         num_clientes++;
     }
-    printf("\nClientes : %d\n", num_clientes);
+
     fclose(arquivo);
+
+    if (num_clientes == 0){
+        fprintf(stderr, "Error: customer.txt is empty\n");
+        free(vetor);
+        return 1;
+    }
 
 
     arquivo = fopen("customer.txt", "r");
 
     if (arquivo == NULL) {
-        fprintf(stderr, "Erro ao abrir customer.txt\n");
+        fprintf(stderr, "Error: could not open customer.txt\n");
         free(vetor);
         return 1;
     }
 
     int** maximum = (int**) malloc (num_clientes * sizeof(int*));
     if (maximum == NULL){
-        fprintf (stderr, "malloc deu errado boy");
+        fprintf (stderr, "Error: memory allocation failed\n");
         free(vetor);
         fclose(arquivo);
         return 1;
@@ -118,7 +124,7 @@ int main (int argc, char* argv[]){
 
         if (maximum[i] == NULL){
             liberar_matriz(maximum, i);
-            fprintf (stderr, "malloc deu errado boy");
+            fprintf (stderr, "Error: memory allocation failed\n");
             fclose(arquivo);
             free(vetor);
             return 1;
@@ -127,7 +133,7 @@ int main (int argc, char* argv[]){
 
     for (int i = 0; i < num_clientes; i++) {
         if (fgets(linha, sizeof(linha), arquivo) == NULL) {
-            fprintf(stderr, "Erro ao ler cliente\n");
+            fprintf(stderr, "Error: could not read customer\n");
 
             fclose(arquivo);
 
@@ -137,7 +143,7 @@ int main (int argc, char* argv[]){
         }
 
         if (parse(linha, maximum[i], recursos) != 0) {
-            fprintf(stderr, "Erro nos dados do cliente %d\n", i);
+            fprintf(stderr, "Error: invalid data for customer %d\n", i);
 
             fclose(arquivo);
 
@@ -152,7 +158,7 @@ int main (int argc, char* argv[]){
 
     int** allocation = (int**) malloc (num_clientes * sizeof(int*));
     if (allocation == NULL){
-        fprintf (stderr, "malloc deu errado boy");
+        fprintf (stderr, "Error: memory allocation failed\n");
 
         liberar_matriz(maximum, num_clientes);
         free(vetor);
@@ -165,7 +171,7 @@ int main (int argc, char* argv[]){
         if (allocation[i] == NULL){
             liberar_matriz(allocation, i);
 
-            fprintf (stderr, "malloc deu errado boy");
+            fprintf (stderr, "Error: memory allocation failed\n");
 
             liberar_matriz(maximum, num_clientes);
             free(vetor);
@@ -173,20 +179,10 @@ int main (int argc, char* argv[]){
         }
     }
 
-    for (int i = 0; i < num_clientes; i++) {
-        printf("Cliente %d:", i);
-
-        for (int j = 0; j < recursos; j++) {
-            printf(" %d", maximum[i][j]);
-        }
-
-        printf("\n");
-    }
-
     FILE *comandos = fopen("commands.txt", "r");
 
     if (comandos == NULL) {
-        fprintf(stderr, "Erro ao abrir commands.txt\n");
+        fprintf(stderr, "Error: could not open commands.txt\n");
 
         liberar_matriz(maximum, num_clientes);
         liberar_matriz(allocation, num_clientes);
@@ -197,7 +193,7 @@ int main (int argc, char* argv[]){
     FILE *resultado_arquivo = fopen("result.txt", "w");
 
     if (resultado_arquivo == NULL){
-        fprintf(stderr, "Erro ao abrir result.txt\n");
+        fprintf(stderr, "Error: could not open result.txt\n");
 
         fclose(comandos);
         liberar_matriz(maximum, num_clientes);
@@ -215,7 +211,7 @@ int main (int argc, char* argv[]){
         int cliente;
         int pedido[recursos];
         if (parse_comando(linha, tipo, &cliente, pedido, recursos) != 0) {
-            fprintf(stderr, "Erro ao interpretar comando\n");
+            fprintf(stderr, "Error: invalid command format\n");
 
             fclose(resultado_arquivo);
             fclose(comandos);
@@ -228,11 +224,16 @@ int main (int argc, char* argv[]){
         }
         
         if (tipo[0] != '*' && cliente >= num_clientes){  //verificação se não tem cliente a mais do que devia
-            fprintf(stderr, "Cliente invalido: %d\n", cliente);
-            continue;
-        }
+            fprintf(stderr, "Error: invalid customer %d\n", cliente);
 
-        printf("Comando interpretado: %s\n", tipo);
+            fclose(resultado_arquivo);
+            fclose(comandos);
+            liberar_matriz(maximum, num_clientes);
+            liberar_matriz(allocation, num_clientes);
+            free(vetor);
+
+            return 1;
+        }
 
         
         //parte do RQ
@@ -308,7 +309,7 @@ int main (int argc, char* argv[]){
                 }
 
                 if (resultado == 2){
-                    fprintf(stderr, "Erro de memoria na verificacao\n");
+                    fprintf(stderr, "Error: memory allocation failed during safety check\n");
 
                     fclose(resultado_arquivo);
                     fclose(comandos);
@@ -342,7 +343,7 @@ int main (int argc, char* argv[]){
             }
 
             if (excedeu == 1){
-                printf("Cliente tentando liberar mais recursos do que possui\n");
+                fprintf(resultado_arquivo, "The customer %d cannot release resources that were not allocated\n", cliente);
                 continue;
             }
 
