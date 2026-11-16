@@ -5,6 +5,19 @@
 #include "parser.h"
 
 
+static void liberar_matriz(int **m, int n){
+    if (m == NULL){
+        return;
+    }
+
+    for (int i=0; i<n; i++){
+        free(m[i]);
+    }
+
+    free(m);
+}
+
+
 int main (int argc, char* argv[]){
     if (argc <=1){
         fprintf (stderr, "faltou argumento");
@@ -101,11 +114,8 @@ int main (int argc, char* argv[]){
         maximum[i] = (int*) malloc (recursos * sizeof (int));
 
         if (maximum[i] == NULL){
-            for (int j=0; j<i; j++){
-                free (maximum[j]);
-            }
+            liberar_matriz(maximum, i);
             fprintf (stderr, "malloc deu errado boy");
-            free(maximum);
             fclose(arquivo);
             free(vetor);
             return 1;
@@ -118,11 +128,7 @@ int main (int argc, char* argv[]){
 
             fclose(arquivo);
 
-            for (int j = 0; j < num_clientes; j++) {
-                free(maximum[j]);
-            }
-
-            free(maximum);
+            liberar_matriz(maximum, num_clientes);
             free(vetor);
             return 1;
         }
@@ -132,11 +138,7 @@ int main (int argc, char* argv[]){
 
             fclose(arquivo);
 
-            for (int j = 0; j < num_clientes; j++) {
-                free(maximum[j]);
-            }
-
-            free(maximum);
+            liberar_matriz(maximum, num_clientes);
             free(vetor);
 
             return 1;
@@ -149,10 +151,7 @@ int main (int argc, char* argv[]){
     if (allocation == NULL){
         fprintf (stderr, "malloc deu errado boy");
 
-        for (int i=0; i<num_clientes; i++){
-            free(maximum[i]);
-        }
-        free(maximum);
+        liberar_matriz(maximum, num_clientes);
         free(vetor);
         return 1;
     }
@@ -161,18 +160,11 @@ int main (int argc, char* argv[]){
         allocation[i] = (int*) calloc (recursos, sizeof (int));
 
         if (allocation[i] == NULL){
-            for (int j=0; j<i; j++){
-                free (allocation[j]);
-            }
+            liberar_matriz(allocation, i);
 
             fprintf (stderr, "malloc deu errado boy");
-            free(allocation);
 
-            for (int j=0; j<num_clientes; j++){
-                free(maximum[j]);
-            }
-
-            free(maximum);
+            liberar_matriz(maximum, num_clientes);
             free(vetor);
             return 1;
         }
@@ -193,15 +185,8 @@ int main (int argc, char* argv[]){
     if (comandos == NULL) {
         fprintf(stderr, "Erro ao abrir commands.txt\n");
 
-        for (int i = 0; i < num_clientes; i++) {
-            free(maximum[i]);
-        }
-
-        free(maximum);
-        for (int i = 0; i < num_clientes; i++) {
-            free(allocation[i]);
-        }
-        free(allocation);
+        liberar_matriz(maximum, num_clientes);
+        liberar_matriz(allocation, num_clientes);
         free(vetor);
         return 1;
     }
@@ -218,15 +203,8 @@ int main (int argc, char* argv[]){
 
             fclose(comandos);
 
-            for (int i = 0; i < num_clientes; i++) {
-                free(maximum[i]);
-            }
-
-            free(maximum);
-            for (int i = 0; i < num_clientes; i++) {
-                free(allocation[i]);
-            }
-            free(allocation);
+            liberar_matriz(maximum, num_clientes);
+            liberar_matriz(allocation, num_clientes);
             free(vetor);
 
             return 1;
@@ -247,16 +225,10 @@ int main (int argc, char* argv[]){
     }
 
     fclose(comandos);
-    for (int i = 0; i < num_clientes; i++) {
-        free(maximum[i]);
-    }
-    free(maximum);
+    liberar_matriz(maximum, num_clientes);
     free(vetor);
 
-    for (int i = 0; i < num_clientes; i++) {
-        free(allocation[i]);
-    }
-    free(allocation);
+    liberar_matriz(allocation, num_clientes);
 
     return 0;
 }
