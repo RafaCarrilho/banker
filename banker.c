@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -192,6 +193,19 @@ int main (int argc, char* argv[]){
         free(vetor);
         return 1;
     }
+
+    FILE *resultado_arquivo = fopen("result.txt", "w");
+
+    if (resultado_arquivo == NULL){
+        fprintf(stderr, "Erro ao abrir result.txt\n");
+
+        fclose(comandos);
+        liberar_matriz(maximum, num_clientes);
+        liberar_matriz(allocation, num_clientes);
+        free(vetor);
+
+        return 1;
+    }
     //leitura geral
     while (1) {
         if (fgets(linha, sizeof(linha), comandos) == NULL) {
@@ -203,6 +217,7 @@ int main (int argc, char* argv[]){
         if (parse_comando(linha, tipo, &cliente, pedido, recursos) != 0) {
             fprintf(stderr, "Erro ao interpretar comando\n");
 
+            fclose(resultado_arquivo);
             fclose(comandos);
 
             liberar_matriz(maximum, num_clientes);
@@ -271,6 +286,7 @@ int main (int argc, char* argv[]){
                 if (resultado == 2){
                     fprintf(stderr, "Erro de memoria na verificacao\n");
 
+                    fclose(resultado_arquivo);
                     fclose(comandos);
                     liberar_matriz(maximum, num_clientes);
                     liberar_matriz(allocation, num_clientes);
@@ -310,19 +326,42 @@ int main (int argc, char* argv[]){
 
         
         
-        
-        if (tipo[0] != '*') {
-            printf("Cliente: %d | Recursos:", cliente);
+        //escrita no arquivo, parte *
+        if (strcmp(tipo, "*") == 0){
+            fprintf(resultado_arquivo, "MAXIMUM   |   ALLOCATION  |   NEED\n");
 
-            for (int i = 0; i < recursos; i++) {
-                printf(" %d", pedido[i]);
+            for (int i =0; i<num_clientes; i++){
+                for (int j =0; j<recursos; j++){
+                    fprintf(resultado_arquivo, "%d ", maximum[i][j]);
+                }
+
+                fprintf(resultado_arquivo, "    |   ");
+
+                for (int j =0; j<recursos; j++){
+                    fprintf(resultado_arquivo, "%d ", allocation[i][j]);
+                }
+
+                fprintf(resultado_arquivo, "      |   ");
+
+                for (int j =0; j<recursos; j++){
+                    fprintf(resultado_arquivo, "%d ", maximum[i][j] - allocation[i][j]);
+                }
+
+                fprintf(resultado_arquivo, "\n");
             }
 
-            printf("\n");
+            fprintf(resultado_arquivo, "AVAILABLE ");
+
+            for (int i =0; i<recursos; i++){
+                fprintf(resultado_arquivo, "%d ", vetor[i]);
+            }
+
+            fprintf(resultado_arquivo, "\n");
         }
 
     }
 
+    fclose(resultado_arquivo);
     fclose(comandos);
     liberar_matriz(maximum, num_clientes);
     free(vetor);
