@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <errno.h>
+#include <string.h>
 #include "parser.h"
+#include "seguranca.h"
 
 
 static void liberar_matriz(int **m, int n){
@@ -190,7 +192,7 @@ int main (int argc, char* argv[]){
         free(vetor);
         return 1;
     }
-
+    //leitura geral
     while (1) {
         if (fgets(linha, sizeof(linha), comandos) == NULL) {
             break;
@@ -209,9 +211,83 @@ int main (int argc, char* argv[]){
 
             return 1;
         }
+        
+        if (tipo[0] != '*' && cliente >= num_clientes){  //verificação se não tem cliente a mais do que devia
+            fprintf(stderr, "Cliente invalido: %d\n", cliente);
+            continue;
+        }
 
         printf("Comando interpretado: %s\n", tipo);
 
+        
+        //parte do RQ
+        
+        if (strcmp(tipo, "RQ") == 0){
+            int excedeu = 0;
+
+            for (int i =0; i<recursos; i++){
+                if (pedido[i] > maximum[cliente][i] - allocation[cliente][i]){
+                    excedeu = 1;
+                }
+            }
+
+            if (excedeu == 1){
+                printf("Pedido excede o limite do cliente\n");
+                continue;
+            }
+
+            
+            int insuficiente = 0;
+
+            for (int i =0; i<recursos; i++){
+                if (pedido[i] > vetor[i]){
+                    insuficiente = 1;
+                    break;
+                }
+            }
+
+            if (insuficiente == 1){
+                printf("Recursos insuficientes\n");
+                continue;
+            }
+
+            for (int i =0; i<recursos; i++){
+                vetor[i] -= pedido[i];
+                allocation[cliente][i] += pedido[i];
+            }
+            int resultado = verifica(maximum, allocation, vetor, num_clientes, recursos);
+
+            if (resultado != 0){
+                for (int i =0; i<recursos; i++){
+                    vetor[i] += pedido[i];
+                    allocation[cliente][i] -= pedido[i];
+                }
+
+                if (resultado == 1){
+                    printf("Pedido negado: estado inseguro\n");
+                    continue;
+                }
+
+                if (resultado == 2){
+                    fprintf(stderr, "Erro de memoria na verificacao\n");
+
+                    fclose(comandos);
+                    liberar_matriz(maximum, num_clientes);
+                    liberar_matriz(allocation, num_clientes);
+                    free(vetor);
+
+                    return 1;
+                }
+            }
+
+            printf("Pedido aprovado\n");
+
+
+        }
+
+        
+        
+        
         if (tipo[0] != '*') {
             printf("Cliente: %d | Recursos:", cliente);
 
