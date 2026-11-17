@@ -1,0 +1,2016 @@
+Script started on 2026-11-16 09:52:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ date
+[?2004lMon Nov 16 09:52:25 -03 2026
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ whoami
+[?2004lracarrilho
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ pwd
+[?2004l/home/racarrilho/dev/banker
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit init[27mgit init
+[?2004l[33mhint: Using 'master' as the name for the initial branch. This default branch name[m
+[33mhint: will change to "main" in Git 3.0. To configure the initial branch name[m
+[33mhint: to use in all of your new repositories, which will suppress this warning,[m
+[33mhint: call:[m
+[33mhint:[m
+[33mhint: 	git config --global init.defaultBranch <name>[m
+[33mhint:[m
+[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and[m
+[33mhint: 'development'. The just-created branch can be renamed via this command:[m
+[33mhint:[m
+[33mhint: 	git branch -m <name>[m
+[33mhint:[m
+[33mhint: Disable this message with "git config set advice.defaultBranchName false"[m
+Initialized empty Git repository in /home/racarrilho/dev/banker/.git/
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit branch -M main[27mgit branch -M main
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit remote add origin https://github.com/RafaCarrilho/banker.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit remote add origin https://github.com/RafaCarrilho/banker.git
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit remote -v[27mgit remote -v
+[?2004lorigin	https://github.com/RafaCarrilho/banker.git (fetch)
+origin	https://github.com/RafaCarrilho/banker.git (push)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit config user.name[27mgit config user.name
+[?2004lRafael Carrilho
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit config user.email[27mgit config user.email
+[?2004lrac4@cesar.school
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mls -la[27mls -la
+[?2004ltotal 36
+drwxr-xr-x 3 racarrilho racarrilho 4096 Nov 16 09:58 [0m[01;34m.[0m
+drwxr-xr-x 5 racarrilho racarrilho 4096 Nov 16 09:47 [01;34m..[0m
+drwxr-xr-x 6 racarrilho racarrilho 4096 Nov 16 09:56 [01;34m.git[0m
+-rw-r--r-- 1 racarrilho racarrilho  111 Nov 15 20:17 commands.txt
+-rw-r--r-- 1 racarrilho racarrilho   25 Nov 16 09:58 commands.txt:Zone.Identifier
+-rw-r--r-- 1 racarrilho racarrilho   29 Nov 15 20:17 customer.txt
+-rw-r--r-- 1 racarrilho racarrilho   25 Nov 16 09:58 customer.txt:Zone.Identifier
+-rw-r--r-- 1 racarrilho racarrilho    0 Nov 16 09:52 evidencias.log
+-rw-r--r-- 1 racarrilho racarrilho  755 Nov 15 20:17 result.txt
+-rw-r--r-- 1 racarrilho racarrilho   25 Nov 16 09:58 result.txt:Zone.Identifier
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mcp result.txt result.expected.txt[27mcp result.txt result.expected.txt
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ excp[K[Kplorer.exe .
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-16 10:00:30-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-11-16 10:00:34-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mwc -c evidencias.log[27mwc -c evidencias.log
+[?2004l4669 evidencias.log
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mdate[27mdate
+[?2004lMon Nov 16 10:00:41 -03 2026
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mcmp result.txt result.expected.txt && echo IGUAL[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccmp result.txt result.expected.txt && echo IGUAL
+[A
+[?2004lIGUAL
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mrm -- 'commands.txt:Zone.Identifier' 'customer.txt:Zone.Identifier' 'result.txt:Zone.Identifier'[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm -- 'commands.txt:Zone.Identifier' 'customer.txt:Zone.Identifier' 'result.txt:Zone.Identifier'
+[A
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mls -la[27mls -la
+[?2004ltotal 36
+drwxr-xr-x 3 racarrilho racarrilho 4096 Nov 16 10:03 [0m[01;34m.[0m
+drwxr-xr-x 5 racarrilho racarrilho 4096 Nov 16 09:47 [01;34m..[0m
+drwxr-xr-x 6 racarrilho racarrilho 4096 Nov 16 09:56 [01;34m.git[0m
+-rw-r--r-- 1 racarrilho racarrilho  111 Nov 15 20:17 commands.txt
+-rw-r--r-- 1 racarrilho racarrilho   29 Nov 15 20:17 customer.txt
+-rw-r--r-- 1 racarrilho racarrilho 5875 Nov 16 10:03 evidencias.log
+-rw-r--r-- 1 racarrilho racarrilho  755 Nov 16 09:58 result.expected.txt
+-rw-r--r-- 1 racarrilho racarrilho  755 Nov 15 20:17 result.txt
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit status[27mgit status
+[?2004lOn branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mcommands.txt[m
+	[31mcustomer.txt[m
+	[31mevidencias.log[m
+	[31mresult.expected.txt[m
+	[31mresult.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add .gitignore[27mgit add .gitignore
+[?2004lfatal: pathspec '.gitignore' did not match any files
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit status[27mgit status
+[?2004lOn branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mcommands.txt[m
+	[31mcustomer.txt[m
+	[31mevidencias.log[m
+	[31mresult.expected.txt[m
+	[31mresult.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add .gitignore[27mgit add .gitignore
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Adiciona .gitignore"[27mgit commit -m "Adiciona .gitignore"
+[?2004l[main (root-commit) 6c49546] Adiciona .gitignore
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit push -u origin main[27mgit push -u origin main
+[?2004lEnumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/RafaCarrilho/banker.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit status --short[27mgit status --short
+[?2004l[31m??[m Makefile
+[31m??[m banker.c
+[31m??[m commands.txt
+[31m??[m customer.txt
+[31m??[m evidencias.log
+[31m??[m parser.c
+[31m??[m parser.h
+[31m??[m result.expected.txt
+[31m??[m result.txt
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached[27mgit diff --cached
+[?2004l[?1h=[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c parser.c parser.h Makefile[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add banker.c parser.c parser.h Makefile
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff --cached --stat
+[A
+[?2004l[?1h= Makefile | 0[m
+ banker.c | 0[m
+ parser.c | 0[m
+ parser.h | 0[m
+ 4 files changed, 0 insertions(+), 0 deletions(-)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached[27mgit diff --cached
+[?2004l[?1h=[1mdiff --git a/Makefile b/Makefile[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+[1mdiff --git a/banker.c b/banker.c[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+[1mdiff --git a/parser.c b/parser.c[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+[1mdiff --git a/parser.h b/parser.h[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..e69de29[m[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "chore: cria estrutura inicial do projeto Banker"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "chore: cria estrutura inicial do projeto Banker"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KCriando o esqueleto do projeto"
+[?2004l[main c6231dc] Criando o esqueleto do projeto
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Makefile
+ create mode 100644 banker.c
+ create mode 100644 parser.c
+ create mode 100644 parser.h
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git [K[K[K[K[7mgit push origin main[27mgit push origin main
+[?2004lEnumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/RafaCarrilho/banker.git
+   6c49546..c6231dc  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ date
+[?2004lMon Nov 16 10:26:24 -03 2026
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc bu[Kanker.c - [Ko banker
+[?2004l[01m[Kbanker.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbanker.c:25:38:[m[K [01;31m[Kerror: [m[Kpassing argument 1 of ‘[01m[Kstrtol[m[K’ makes pointer from integer without a cast [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   25 |         long int valor = strtol ([01;34m[Ka[m[K[01;34m[Kr[m[K[01;34m[Kg[m[K[01;34m[Kv[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K, &sobra, 10);
+      |                                  [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K^[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                      [01;34m[K|[m[K
+      |                                      [01;34m[Kchar[m[K
+In file included from [01m[Kbanker.c:2[m[K:
+[01m[K/usr/include/stdlib.h:181:48:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst char * restrict[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kchar[m[K[m[K’
+  181 | extern long int strtol ([01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Kn[m[K[01;32m[Ks[m[K[01;32m[Kt[m[K[01;32m[K [m[K[01;32m[Kc[m[K[01;32m[Kh[m[K[01;32m[Ka[m[K[01;32m[Kr[m[K[01;32m[K [m[K[01;32m[K*[m[K[01;32m[K_[m[K[01;32m[K_[m[K[01;32m[Kr[m[K[01;32m[Ke[m[K[01;32m[Ks[m[K[01;32m[Kt[m[K[01;32m[Kr[m[K[01;32m[Ki[m[K[01;32m[Kc[m[K[01;32m[Kt[m[K[01;32m[K [m[K[01;32m[K_[m[K[01;32m[K_[m[K[01;32m[Kn[m[K[01;32m[Kp[m[K[01;32m[Kt[m[K[01;32m[Kr[m[K,
+      |                         [01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K^[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K
+[01m[Kbanker.c:33:19:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   33 |         if (sobra [01;35m[K==[m[K argv[i]) {
+      |                   [01;35m[K^~[m[K
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./ [Kbanker 10 5 7
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27mgit add banker.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git dff[K[Kiff
+[?2004l[?1h=[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached[27mgit diff --cached
+[?2004l[?1h=[1mdiff --git a/banker.c b/banker.c[m[m
+[1mindex e69de29..e3dbbd1 100644[m[m
+[1m--- a/banker.c[m[m
+[1m+++ b/banker.c[m[m
+[36m@@ -0,0 +1,60 @@[m[m
+[32m+[m[32m#include <stdio.h>[m[m
+[32m+[m[32m#include <stdlib.h>[m[m
+[32m+[m[32m#include <limits.h>[m[m
+[32m+[m[32m#include <errno.h>[m[m
+[32m+[m[m
+[32m+[m[m
+[32m+[m[32mint main (int argc, char* argv[]){[m[m
+[32m+[m[32m    if (argc <=1){[m[m
+[32m+[m[32m        fprintf (stderr, "faltou argumento");[m[m
+[32m+[m[32m        return 1;[m[m
+[32m+[m[32m    }[m[m
+[32m+[m[m
+[32m+[m[32m    int recursos = argc-1;[m[m
+[32m+[m[32m    int* vetor = (int*) malloc (recursos* sizeof(int));[m[m
+[32m+[m[41m    [m[m
+:[K[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit status --short[27mgit status --short
+[?2004l[32mM[m  banker.c
+[31m??[m commands.txt
+[31m??[m customer.txt
+[31m??[m evidencias.log
+[31m??[m result.expected.txt
+[31m??[m result.txt
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git commit -m "Feito a estrutura inicial para ler o argumento do banker"
+[?2004l[main f215c3a] Feito a estrutura inicial para ler o argumento do banker
+ 1 file changed, 60 insertions(+)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gh[K[Kgit push origin main
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 713 bytes | 713.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/RafaCarrilho/banker.git
+   c6231dc..f215c3a  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mps -ef | grep '[s]cript'[27mps -ef | grep '[s]cript'
+[?2004lroot         126       1  0 09:47 ?        00:00:00 /bin/sh /usr/lib/systemd/[01;31m[Kscript[m[Ks/chronyd-starter.sh -n -F 1
+racarri+     634     633  0 09:47 pts/2    00:00:00 sh -c "$VSCODE_WSL_EXT_LOCATION/[01;31m[Kscript[m[Ks/wslServer.sh" a717861c07586a53d83b80d742cd3f59b20a6273 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=1723206219-4216162871-2433843393-3309545749 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+racarri+     635     634  0 09:47 pts/2    00:00:00 sh /mnt/c/Users/Pichau/.vscode/extensions/ms-vscode-remote.remote-wsl-1.104.7/[01;31m[Kscript[m[Ks/wslServer.sh a717861c07586a53d83b80d742cd3f59b20a6273 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=1723206219-4216162871-2433843393-3309545749 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+racarri+    1680    1585  0 09:51 pts/9    00:00:00 /bin/bash --init-file /home/racarrilho/.vscode-server/bin/a717861c07586a53d83b80d742cd3f59b20a6273/out/vs/workbench/contrib/terminal/common/[01;31m[Kscript[m[Ks/shellIntegration-bash.sh
+racarri+    3828    1680  0 10:00 pts/9    00:00:00 [01;31m[Kscript[m[K -af evidencias.log
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mls -lh evidencias.log[27mls -lh evidencias.log
+[?2004l-rw-r--r-- 1 racarrilho racarrilho 20K Nov 16 10:58 evidencias.log
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ls -lh evidencias.logps -ef | grep '[s]cript'[4Pgit push origin maincommit -m "Feito a estrutura inicial para ler o argumento do banker"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus --short[K[1Pdiff --cached[Kadd banker.c[1P./banker 10 5 7gcc banker.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker[1Pls -lh evidencias.logps -ef | grep '[s]cript'[4Pgit push origin maincommit -m "Feito a estrutura inicial para ler o argumento do banker"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus --short[K[1Pdiff --cached[Kadd banker.c[1P./banker 10 5 7gcc banker.c -o banker[7P./banker 10 5 7
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./banker 10 5 7gcc banker.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker[7P./banker 10 5 7
+[?2004l5[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./banker 10 5 7gcc banker.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker[7P./banker 10 5 7
+[?2004l
+Clientes : 5
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./banker 10 5 7gcc banker.c -o banker
+[?2004l[01m[Kbanker.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbanker.c:83:11:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Karquivo[m[K’
+   83 |     FILE *[01;31m[Karquivo[m[K = fopen("customer.txt", "r");
+      |           [01;31m[K^~~~~~~[m[K
+[01m[Kbanker.c:61:11:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Karquivo[m[K’ with type ‘[01m[KFILE *[m[K’
+   61 |     FILE *[01;36m[Karquivo[m[K = fopen("customer.txt", "r");
+      |           [01;36m[K^~~~~~~[m[K
+[01m[Kbanker.c:96:21:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K)[m[K’ token
+   96 |     for (int i=0; i<[01;31m[K)[m[K
+      |                     [01;31m[K^[m[K
+[01m[Kbanker.c:97:1:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K}[m[K’ token
+   97 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker
+[?2004l[01m[Kbanker.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbanker.c:83:11:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Karquivo[m[K’
+   83 |     FILE *[01;31m[Karquivo[m[K = fopen("customer.txt", "r");
+      |           [01;31m[K^~~~~~~[m[K
+[01m[Kbanker.c:61:11:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Karquivo[m[K’ with type ‘[01m[KFILE *[m[K’
+   61 |     FILE *[01;36m[Karquivo[m[K = fopen("customer.txt", "r");
+      |           [01;36m[K^~~~~~~[m[K
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker[7P./banker 10 5 7
+[?2004l
+Clientes : 5
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./banker 10 5 7gcc banker.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc banker.c -o banker[1P[1P[1P[1P[1P[1P[1@p[1@a[1@r[1@s[1@e[1@r
+[?2004l[01m[Kparser.c:[m[K In function ‘[01m[Kparse_customer[m[K’:
+[01m[Kparser.c:5:18:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kstrtol[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+    5 |     long valor = [01;31m[Kstrtol[m[K(atual, &fim, 10);
+      |                  [01;31m[K^~~~~~[m[K
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc parser.c -o banker
+[?2004l/usr/bin/x86_64-linux-gnu-ld.bfd: /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -Wall -Wextra -Werror -c parser.c[27mgcc -Wall -Wextra -Werror -c parser.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -Werror -c parser.c[15Pparser.c -o bankerbank[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l/usr/bin/x86_64-linux-gnu-ld.bfd: /tmp/cc1cympz.o: in function `main':
+banker.c:(.text+0x5ab): undefined reference to `parse'
+collect2: error: ld returned 1 exit status
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -Wall -Wextra -std=c11 banker.c parser.c -o banker[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7m./banker 10 5 7[27m./banker 10 5 7
+[?2004l
+Clientes : 5
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./banker 10 5 7gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./banker 10 5 7[K
+[?2004l
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   banker.c[m
+	[31mmodified:   parser.c[m
+	[31mmodified:   parser.h[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mcommands.txt[m
+	[31mcustomer.txt[m
+	[31mevidencias.log[m
+	[31mresult.expected.txt[m
+	[31mresult.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff -- banker.c parser.c parser.h[27mgit diff -- banker.c parser.c parser.h
+[?2004l[?1h=[1mdiff --git a/banker.c b/banker.c[m[m
+[1mindex e3dbbd1..d8c1875 100644[m[m
+[1m--- a/banker.c[m[m
+[1m+++ b/banker.c[m[m
+[36m@@ -2,6 +2,7 @@[m[m
+ #include <stdlib.h>[m[m
+ #include <limits.h>[m[m
+ #include <errno.h>[m[m
+[32m+[m[32m#include "parser.h"[m[m
+ [m[m
+ [m[m
+ int main (int argc, char* argv[]){[m[m
+[36m@@ -57,4 +58,89 @@[m [mint main (int argc, char* argv[]){[m[m
+         vetor[i-1] = (int)valor;[m[m
+         [m[m
+     }[m[m
+[32m+[m[m
+[32m+[m[32m    FILE *arquivo = fopen("customer.txt", "r");[m[m
+[32m+[m[m
+[32m+[m[32m    if (arquivo == NULL) {[m[m
+:[K[K:[K[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --no-index -- /dev/null parser.c[27mgit diff --no-index -- /dev/null parser.c
+[?2004l[?1h=[1mdiff --git a/parser.c b/parser.c[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..be16b1e[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/parser.c[m[m
+[36m@@ -0,0 +1,42 @@[m[m
+[32m+[m[m
+[32m+[m[32m#include <stdlib.h>[m[m
+[32m+[m[32m#include <limits.h>[m[m
+[32m+[m[32m#include <errno.h>[m[m
+[32m+[m[32m#include "parser.h"[m[m
+[32m+[m[m
+[32m+[m[32mint parse(char *linha, int *destino, int recursos) {[m[m
+[32m+[m[32m    if (linha == NULL || destino == NULL || recursos <= 0) {[m[m
+[32m+[m[32m        return 1;[m[m
+[32m+[m[32m    }[m[m
+[32m+[m[m
+[32m+[m[32m    char *atual = linha;[m[m
+[32m+[m[32m    char *fim;[m[m
+[32m+[m[m
+:[K[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --no-index -- /dev/null parser.h[27mgit diff --no-index -- /dev/null parser.h
+[?2004l[?1h=[1mdiff --git a/parser.h b/parser.h[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..63ce589[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/parser.h[m[m
+[36m@@ -0,0 +1,7 @@[m[m
+[32m+[m[32m#ifndef PARSER_H[m[m
+[32m+[m[32m#define PARSER_H[m[m
+[32m+[m[m
+[32m+[m[m
+[32m+[m[32mint parse (char *linha, int *destino, int recursos);[m[m
+[32m+[m[m
+[32m+[m[32m#endif[m[m
+\ No newline at end of file[m[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ q[K[7mgit diff -- banker.c parser.c parser.h > revisao.patch[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit diff -- banker.c parser.c parser.h > revisao.patch
+[A
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mcat revisao.patch[27mcat revisao.patch
+[?2004ldiff --git a/banker.c b/banker.c
+index e3dbbd1..d8c1875 100644
+--- a/banker.c
++++ b/banker.c
+@@ -2,6 +2,7 @@
+ #include <stdlib.h>
+ #include <limits.h>
+ #include <errno.h>
++#include "parser.h"
+ 
+ 
+ int main (int argc, char* argv[]){
+@@ -57,4 +58,89 @@ int main (int argc, char* argv[]){
+         vetor[i-1] = (int)valor;
+         
+     }
++
++    FILE *arquivo = fopen("customer.txt", "r");
++
++    if (arquivo == NULL) {
++        fprintf(stderr, "Erro ao abrir customer.txt\n");
++        free(vetor);
++        return 1;
++    }
++
++    int clientes =0;
++    
++    char linha[256];
++    while (1){
++        if (fgets(linha, sizeof(linha), arquivo) == NULL) {
++        break;
++        }
++
++        clientes++;
++    }
++    printf("\nClientes : %d\n", clientes);
++    fclose(arquivo);
++
++
++    arquivo = fopen("customer.txt", "r");
++
++    if (arquivo == NULL) {
++        fprintf(stderr, "Erro ao abrir customer.txt\n");
++        free(vetor);
++        return 1;
++    }
++
++    int** matriz = (int**) malloc (clientes * sizeof(int*));
++    if (matriz == NULL){
++        fprintf (stderr, "malloc deu errado boy");
++        free(vetor);
++        fclose(arquivo);
++        return 1;
++    }
++
++    for (int i=0; i < clientes; i++){
++        matriz[i] = (int*) malloc (recursos * sizeof (int));
++        
++        if (matriz[i] == NULL){
++            for (int j=0; j<i; j++){
++                free (matriz[j]);
++            }
++            fprintf (stderr, "malloc deu errado boy");
++            free(matriz);
++            fclose(arquivo);
++            free(vetor);
++            return 1;
++        }
++    }
++    
++    for (int i = 0; i < clientes; i++) {
++        if (fgets(linha, sizeof(linha), arquivo) == NULL) {
++            fprintf(stderr, "Erro ao ler cliente\n");
++            return 1;
++        }
++
++        if (parse(linha, matriz[i], recursos) != 0) {
++            fprintf(stderr, "Erro nos dados do cliente %d\n", i);
++            return 1;
++        }
++    }
++
++    for (int i = 0; i < clientes; i++) {
++        printf("Cliente %d:", i);
++
++        for (int j = 0; j < recursos; j++) {
++            printf(" %d", matriz[i][j]);
++        }
++
++        printf("\n");
++    }
++
++
++    fclose(arquivo);
++    for (int i = 0; i < clientes; i++) {
++        free(matriz[i]);
++    }
++    free(matriz);
++    free(vetor);
++
++    return 0;
+ }
+\ No newline at end of file
+diff --git a/parser.c b/parser.c
+index e69de29..be16b1e 100644
+--- a/parser.c
++++ b/parser.c
+@@ -0,0 +1,42 @@
++
++#include <stdlib.h>
++#include <limits.h>
++#include <errno.h>
++#include "parser.h"
++
++int parse(char *linha, int *destino, int recursos) {
++    if (linha == NULL || destino == NULL || recursos <= 0) {
++        return 1;
++    }
++
++    char *atual = linha;
++    char *fim;
++
++    for (int i = 0; i < recursos; i++) {
++        errno = 0;
++        long valor = strtol(atual, &fim, 10);
++
++        if (fim == atual) {
++            return 1;
++        }
++
++        if (errno == ERANGE || valor > INT_MAX || valor < 0) {
++            return 1;
++        }
++
++        if (i < recursos - 1) {
++            if (*fim != ',') {
++                return 1;
++            }
++            atual = fim + 1;
++        } else {
++            if (*fim != '\n' && *fim != '\0') {
++                return 1;
++            }
++        }
++
++        destino[i] = (int)valor;
++    }
++
++    return 0;
++}
+diff --git a/parser.h b/parser.h
+index e69de29..63ce589 100644
+--- a/parser.h
++++ b/parser.h
+@@ -0,0 +1,7 @@
++#ifndef PARSER_H
++#define PARSER_H
++
++
++int parse (char *linha, int *destino, int recursos);
++
++#endif
+\ No newline at end of file
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ cat revisao.patch[37@git diff -- banker.c parser.c parser.h >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pno-index -- /dev/null parser.[Cc[3P banker.c parser.c parser.hstatus[K./banker 10 5 7gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat revisao.patch[K[37@git diff -- banker.c parser.c parser.h >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pno-index -- /dev/null parser.[Cc[3P banker.c parser.c parser.hstatus[K./banker 10 5 7gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./banker 10 5 7[K
+[?2004l
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c parser.c parser.h[27mgit add banker.c parser.c parser.h
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git cop[Kmmit -m "Realizado parser inciial[K[K[K[K[Kicil[Kal para ler o costumer"[C[C[C[C
+[?2004l[main a6749ee] Realizado parser inicial para ler o costumer
+ 3 files changed, 154 insertions(+)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git pui[Ksjh[K[Kh origin main
+[?2004lEnumerating objects: 9, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 20 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.62 KiB | 1.62 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/RafaCarrilho/banker.git
+   f215c3a..a6749ee  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-16 12:25:48-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-16 12:30:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit show HEAD:banker.c | grep -n -A8 "Erro ao ler cliente"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit show HEAD:banker.c | grep -n -A8 "Erro ao ler cliente"
+[?2004l[32m[K117[m[K[36m[K:[m[K            fprintf(stderr, "[01;31m[KErro ao ler cliente[m[K\n");
+[32m[K118[m[K[36m[K-[m[K
+[32m[K119[m[K[36m[K-[m[K            fclose(arquivo);
+[32m[K120[m[K[36m[K-[m[K
+[32m[K121[m[K[36m[K-[m[K            for (int j = 0; j < clientes; j++) {
+[32m[K122[m[K[36m[K-[m[K                free(matriz[j]);
+[32m[K123[m[K[36m[K-[m[K            }
+[32m[K124[m[K[36m[K-[m[K
+[32m[K125[m[K[36m[K-[m[K            free(matriz);
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ date
+[?2004lMon Nov 16 13:39:03 -03 2026
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -Wall -Wextra -std=c11 teste_seguranca.c seguranca.c -o teste[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -std=c11 teste_seguranca.c seguranca.c -o teste[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7m./teste[27m./teste
+[?2004lResultado: 0
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./teste[48@gcc -Wall -Wextra -std=c11 teste.c seguranca.c -o [C[C[C[C[C[1@_[1@+[1P[1@i[1@n[1@s[1@t[1@r[1@a[1P[1P[1P[1@t[1@a[1@v[1@e[1@l
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o teste[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./teste[K_instavel
+[?2004lbash: ./teste_instavel: No such file or directory
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./teste_instavelgcc -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o teste[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./teste[K
+[?2004lResultado: 1
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 teste.c seguranca.c -o teste[27m
+[7mvalgrind --leak-check=full ./teste[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -g -Wall -Wextra -std=c11 teste.c seguranca.c -o teste
+valgrind --leak-check=full ./teste
+[?2004l==61508== Memcheck, a memory error detector
+==61508== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==61508== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==61508== Command: ./teste
+==61508== 
+Resultado: 0
+==61508== 
+==61508== HEAP SUMMARY:
+==61508==     in use at exit: 0 bytes in 0 blocks
+==61508==   total heap usage: 3 allocs, 3 frees, 1,056 bytes allocated
+==61508== 
+==61508== All heap blocks were freed -- no leaks are possible
+==61508== 
+==61508== For lists of detected and suppressed errors, rerun with: -s
+==61508== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o teste_instavel[27m
+[7m./teste_instavel[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -g -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o teste_instavel
+./teste_instavel
+[?2004lResultado: 1
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgrep -n "available\[3\]" teste_instavel.c[27mgrep -n "available\[3\]" teste_instavel.c
+[?2004l[32m[K24[m[K[36m[K:[m[K    int [01;31m[Kavailable[3][m[K = {0, 0, 0};
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mvalgrind --leak-check=full ./teste_instavel[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind --leak-check=full ./teste_instavel
+[?2004l==62131== Memcheck, a memory error detector
+==62131== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==62131== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==62131== Command: ./teste_instavel
+==62131== 
+Resultado: 1
+==62131== 
+==62131== HEAP SUMMARY:
+==62131==     in use at exit: 0 bytes in 0 blocks
+==62131==   total heap usage: 3 allocs, 3 frees, 1,056 bytes allocated
+==62131== 
+==62131== All heap blocks were freed -- no leaks are possible
+==62131== 
+==62131== For lists of detected and suppressed errors, rerun with: -s
+==62131== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add seguranca.c seguranca.h[27mgit add seguranca.c seguranca.h
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27mgit diff --cached --stat
+[?2004l[?1h= seguranca.c | 58 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[m
+ seguranca.h |  7 [32m+++++++[m[m
+ 2 files changed, 65 insertions(+)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git commit -m "feito a verificação de seguran~[Kça pra[K[Kara evitar deadlock em arquivos s[Kseparados chamos [K[K[Kados seguranca .c e c[K,.h[K[K[K.h"
+[?2004l[main 9dcb7fc] feito a verificação de segurança para evitar deadlock em arquivos separados chamados seguranca .c e .h
+ 2 files changed, 65 insertions(+)
+ create mode 100644 seguranca.c
+ create mode 100644 seguranca.h
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git push origin main
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 962 bytes | 962.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/RafaCarrilho/banker.git
+   a6749ee..9dcb7fc  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git push origin maincommit -m "feito a verificação de segurança para evitar deadlock em arquivos separados chamados seguranca .c e .h"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff --cached --stat[Kadd seguranca.c seguranca.hvalgrind --leak-check=full ./teste_instavel[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pgrep -n "available\[3\]" teste_instavel.c[25P./teste_instavel[60@gcc -g -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[42Pvalgrind --leak-check=full ./teste[24@gcc -g -Wall -Wextra -std=c11 teste.c seguranca.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./teste[K_instavel[K[51@gcc -g -Wall -Wextra -std=c11 teste.c seguranca.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./teste[K_instavelgcc -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o teste[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./teste[K[48@gcc -Wall -Wextra -std=c11 teste.c seguranca.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdate[Kgit show HEAD:banker.c | grep -n -A8 "Erro ao ler cliente"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgit push origin maincommit -m "Realizado parser inicial para ler o costumer"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Padd banker.c parser.c parser.h[19P./banker 10 5 7gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K./BANK[K[K[K[Kbanker[46@gcc -Wall -Wextra -std=c11 banker.c parser.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pit push origin maincommit -m "feito a verificação de segurança para evitar deadlock em arquivos separados chamados seguranca .c e .h"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff --cached --stat[Kadd seguranca.c seguranca.hvalgrind --leak-check=full ./teste_instavel[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pgrep -n "available\[3\]" teste_instavel.c[25P./teste_instavel[60@gcc -g -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[42Pvalgrind --leak-check=full ./teste[24@gcc -g -Wall -Wextra -std=c11 teste.c seguranca.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./teste[K_instavelgcc -Wall -Wextra -std=c11 teste_instavel.c seguranca.c -o teste[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./teste[K[48@gcc -Wall -Wextra -std=c11 teste.c seguranca.c -o [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdate[Kgit show HEAD:banker.c | grep -n -A8 "Erro ao ler cliente"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgit push origin maincommit -m "Realizado parser inicial para ler o costumer"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Padd banker.c parser.c parser.h[19P./banker 10 5 7gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./banker 10 5 7[K
+[?2004l
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando: RQ 0 0 2 1
+Comando: RQ 2 3 0 2
+Comando: RQ 1 2 0 0
+Comando: RQ 4 0 0 2
+Comando: RL 0 0 1 1
+Comando: RQ 3 2 1 1
+Comando: *
+Comando: RQ 4 4 0 0
+Comando: RQ 1 1 0 2
+Comando: RQ 0 0 2 0
+Comando: RQ 2 0 1 0[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./banker 10 5 7gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[01m[Kparser.c:[m[K In function ‘[01m[Kparse_comando[m[K’:
+[01m[Kparser.c:87:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   87 |     [01;31m[Kprintf[m[K("Cliente token: %s\n", t);
+      |     [01;31m[K^~~~~~[m[K
+[01m[Kparser.c:7:1:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+    6 | #include "parser.h"
+  +++ |+[32m[K#include <stdio.h>[m[K
+    7 | 
+[01m[Kparser.c:87:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wbuiltin-declaration-mismatch-Wbuiltin-declaration-mismatch]8;;[m[K]
+   87 |     [01;35m[Kprintf[m[K("Cliente token: %s\n", t);
+      |     [01;35m[K^~~~~~[m[K
+[01m[Kparser.c:87:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Kparser.c:49:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcliente_local[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   49 |     int [01;35m[Kcliente_local[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[01m[Kparser.c:[m[K In function ‘[01m[Kparse_comando[m[K’:
+[01m[Kparser.c:49:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcliente_local[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   49 |     int [01;35m[Kcliente_local[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -Wall -Wextra -std=c11 banker.c parser.c -o banker[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./banker 10 5 7[K
+[?2004l
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando: RQ 0 0 2 1
+Comando: RQ 2 3 0 2
+Comando: RQ 1 2 0 0
+Comando: RQ 4 0 0 2
+Comando: RL 0 0 1 1
+Comando: RQ 3 2 1 1
+Comando: *
+Comando: RQ 4 4 0 0
+Comando: RQ 1 1 0 2
+Comando: RQ 0 0 2 0
+Comando: RQ 2 0 1 0[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -Wall -Wextra -std=c11 -c parser.c[27mgcc -Wall -Wextra -std=c11 -c parser.c
+[?2004l[01m[Kparser.c:[m[K In function ‘[01m[Kparse_comando[m[K’:
+[01m[Kparser.c:49:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcliente_local[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   49 |     int [01;35m[Kcliente_local[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 teste_parser.c parser.c -o teste_parser[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall -Wextra -std=c11 teste_parser.c parser.c -o teste_parser
+[?2004l[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[Kteste_parser.c: No such file or directory
+compilation terminated.
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -g -Wall -Wextra -std=c11 teste_parser.c parser.c -o teste_parser
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mvalgrind --leak-check=full ./teste_parser[27mvalgrind --leak-check=full ./teste_parser
+[?2004l==74334== Memcheck, a memory error detector
+==74334== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==74334== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==74334== Command: ./teste_parser
+==74334== 
+[RQ 0 0 2 1] -> 0  tipo=RQ cliente=0 pedido=0 2 1
+[RQ 0 0 2] -> 1
+[RQ 0 0 2 1 9] -> 1
+[RQ x 0 2 1] -> 1
+[RQ 0 0 -2 1] -> 1
+[RL 1 1 0 2] -> 0  tipo=RL cliente=1 pedido=1 0 2
+[*] -> 0  tipo=* cliente=-1 pedido=-1 -1 -1
+[* 1] -> 1
+[RX 0 0 0 0] -> 1
+[] -> 1
+==74334== 
+==74334== HEAP SUMMARY:
+==74334==     in use at exit: 0 bytes in 0 blocks
+==74334==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==74334== 
+==74334== All heap blocks were freed -- no leaks are possible
+==74334== 
+==74334== For lists of detected and suppressed errors, rerun with: -s
+==74334== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add parser.c parser.h[27mgit add parser.c parser.h
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27mgit diff --cached --stat
+[?2004l[?1h= parser.c | 95 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m-[m[m
+ parser.h |  1 [32m+[m[m
+ 2 files changed, 95 insertions(+), 1 deletion(-)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git commit -m "Feito o parser dos comandos RT[K[KRQ[K[K[K, do cliente e do vetor de valores comt rata[K[K[K[K[K[K trta[K[Katamento de ero[Kro"
+[?2004l[main e48392e] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+ 2 files changed, 95 insertions(+), 1 deletion(-)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git push orign[Kin man[Kin
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 20 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.17 KiB | 1.17 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/RafaCarrilho/banker.git
+   9dcb7fc..e48392e  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit show HEAD:parser.h[27mgit show HEAD:parser.h
+[?2004l[?1h=#ifndef PARSER_H[m
+#define PARSER_H[m
+[m
+[m
+int parse (char *linha, int *destino, int recursos);[m
+int parse_comando(char *linha, char *tipo, int *cliente, int *pedido, int recursos);[m
+[m
+#endif[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c -o banker[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mvalgrind --leak-check=full ./banker 10 5 7[27mvalgrind --leak-check=full ./banker 10 5 7
+[?2004l==79216== Memcheck, a memory error detector
+==79216== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==79216== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==79216== Command: ./banker 10 5 7
+==79216== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Cliente: 0 | Recursos: 0 2 1
+Comando interpretado: RQ
+Cliente: 2 | Recursos: 3 0 2
+Comando interpretado: RQ
+Cliente: 1 | Recursos: 2 0 0
+Comando interpretado: RQ
+Cliente: 4 | Recursos: 0 0 2
+Comando interpretado: RL
+Cliente: 0 | Recursos: 0 1 1
+Comando interpretado: RQ
+Cliente: 3 | Recursos: 2 1 1
+Comando interpretado: *
+Comando interpretado: RQ
+Cliente: 4 | Recursos: 4 0 0
+Comando interpretado: RQ
+Cliente: 1 | Recursos: 1 0 2
+Comando interpretado: RQ
+Cliente: 0 | Recursos: 0 2 0
+Comando interpretado: RQ
+Cliente: 2 | Recursos: 0 1 0
+==79216== 
+==79216== HEAP SUMMARY:
+==79216==     in use at exit: 0 bytes in 0 blocks
+==79216==   total heap usage: 14 allocs, 14 frees, 14,840 bytes allocated
+==79216== 
+==79216== All heap blocks were freed -- no leaks are possible
+==79216== 
+==79216== For lists of detected and suppressed errors, rerun with: -s
+==79216== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmkdir -p /tmp/t_err && cp customer.txt /tmp/t_err/ && printf 'RQ 0 0 2\n' > /tmp/t_err/commands.txt[27m
+[7m(cd /tmp/t_err && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p /tmp/t_err && cp customer.txt /tmp/t_err/ && printf 'RQ 0 0 2\n' > /tmp/t_err/commands.txt
+(cd /tmp/t_err && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")
+[?2004l==79369== Memcheck, a memory error detector
+==79369== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==79369== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==79369== Command: /home/racarrilho/dev/banker/banker 10 5 7
+==79369== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Erro ao interpretar comando
+==79369== 
+==79369== HEAP SUMMARY:
+==79369==     in use at exit: 0 bytes in 0 blocks
+==79369==   total heap usage: 14 allocs, 14 frees, 14,840 bytes allocated
+==79369== 
+==79369== All heap blocks were freed -- no leaks are possible
+==79369== 
+==79369== For lists of detected and suppressed errors, rerun with: -s
+==79369== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+saida=1
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27mgit add banker.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27mgit diff --cached --stat
+[?2004l[?1h= banker.c | 89 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m-------------------[m[m
+ 1 file changed, 70 insertions(+), 19 deletions(-)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   banker.c[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   banker.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mcommands.txt[m
+	[31mcustomer.txt[m
+	[31mevidencias.log[m
+	[31mresult.expected.txt[m
+	[31mresult.txt[m
+	[31mrevisao.patch[m
+	[31mteste[m
+	[31mteste.c[m
+	[31mteste_instavel[m
+	[31mteste_instavel.c[m
+	[31mteste_parser[m
+	[31mteste_parser.c[m
+
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c -o banker[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall -Wextra -std=c11 banker.c parser.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mvalgrind --leak-check=full ./banker 10 5 7[27m
+[7m(cd /tmp/t_err && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind --leak-check=full ./banker 10 5 7
+(cd /tmp/t_err && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")
+[?2004l==84483== Memcheck, a memory error detector
+==84483== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==84483== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==84483== Command: ./banker 10 5 7
+==84483== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Cliente: 0 | Recursos: 0 2 1
+Comando interpretado: RQ
+Cliente: 2 | Recursos: 3 0 2
+Comando interpretado: RQ
+Cliente: 1 | Recursos: 2 0 0
+Comando interpretado: RQ
+Cliente: 4 | Recursos: 0 0 2
+Comando interpretado: RL
+Cliente: 0 | Recursos: 0 1 1
+Comando interpretado: RQ
+Cliente: 3 | Recursos: 2 1 1
+Comando interpretado: *
+Comando interpretado: RQ
+Cliente: 4 | Recursos: 4 0 0
+Comando interpretado: RQ
+Cliente: 1 | Recursos: 1 0 2
+Comando interpretado: RQ
+Cliente: 0 | Recursos: 0 2 0
+Comando interpretado: RQ
+Cliente: 2 | Recursos: 0 1 0
+==84483== 
+==84483== HEAP SUMMARY:
+==84483==     in use at exit: 0 bytes in 0 blocks
+==84483==   total heap usage: 20 allocs, 20 frees, 14,940 bytes allocated
+==84483== 
+==84483== All heap blocks were freed -- no leaks are possible
+==84483== 
+==84483== For lists of detected and suppressed errors, rerun with: -s
+==84483== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==84485== Memcheck, a memory error detector
+==84485== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==84485== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==84485== Command: /home/racarrilho/dev/banker/banker 10 5 7
+==84485== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Erro ao interpretar comando
+==84485== 
+==84485== HEAP SUMMARY:
+==84485==     in use at exit: 0 bytes in 0 blocks
+==84485==   total heap usage: 20 allocs, 20 frees, 14,940 bytes allocated
+==84485== 
+==84485== All heap blocks were freed -- no leaks are possible
+==84485== 
+==84485== For lists of detected and suppressed errors, rerun with: -s
+==84485== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+saida=1
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27m
+[7mgit diff --cached --stat[27m
+[7mgit status[27m[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git add banker.c
+git diff --cached --stat
+git status
+[?2004l[?1h= banker.c | 161 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m--------------------------------[m[m
+ 1 file changed, 129 insertions(+), 32 deletions(-)[m
+[K[?1l>On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   banker.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mcommands.txt[m
+	[31mcustomer.txt[m
+	[31mevidencias.log[m
+	[31mresult.expected.txt[m
+	[31mresult.txt[m
+	[31mrevisao.patch[m
+	[31mteste[m
+	[31mteste.c[m
+	[31mteste_instavel[m
+	[31mteste_instavel.c[m
+	[31mteste_parser[m
+	[31mteste_parser.c[m
+
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Cria allocation e le commands.txt com parse_comando"[27m
+[7mgit push origin main[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git commit -m "Cria allocation e le commands.txt com parse_comando"
+git push origin main
+[?2004l[main de925ff] Cria allocation e le commands.txt com parse_comando
+ 1 file changed, 129 insertions(+), 32 deletions(-)
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 1.05 KiB | 1.05 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   e48392e..de925ff  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c -o banker[27m
+[7mvalgrind --leak-check=full ./banker 10 5 7[27m
+[7m(cd /tmp/t_err && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall -Wextra -std=c11 banker.c parser.c -o banker
+valgrind --leak-check=full ./banker 10 5 7
+(cd /tmp/t_err && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")
+[?2004l==85482== Memcheck, a memory error detector
+==85482== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==85482== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==85482== Command: ./banker 10 5 7
+==85482== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Cliente: 0 | Recursos: 0 2 1
+Comando interpretado: RQ
+Cliente: 2 | Recursos: 3 0 2
+Comando interpretado: RQ
+Cliente: 1 | Recursos: 2 0 0
+Comando interpretado: RQ
+Cliente: 4 | Recursos: 0 0 2
+Comando interpretado: RL
+Cliente: 0 | Recursos: 0 1 1
+Comando interpretado: RQ
+Cliente: 3 | Recursos: 2 1 1
+Comando interpretado: *
+Comando interpretado: RQ
+Cliente: 4 | Recursos: 4 0 0
+Comando interpretado: RQ
+Cliente: 1 | Recursos: 1 0 2
+Comando interpretado: RQ
+Cliente: 0 | Recursos: 0 2 0
+Comando interpretado: RQ
+Cliente: 2 | Recursos: 0 1 0
+==85482== 
+==85482== HEAP SUMMARY:
+==85482==     in use at exit: 0 bytes in 0 blocks
+==85482==   total heap usage: 20 allocs, 20 frees, 14,940 bytes allocated
+==85482== 
+==85482== All heap blocks were freed -- no leaks are possible
+==85482== 
+==85482== For lists of detected and suppressed errors, rerun with: -s
+==85482== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==85484== Memcheck, a memory error detector
+==85484== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==85484== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==85484== Command: /home/racarrilho/dev/banker/banker 10 5 7
+==85484== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Erro ao interpretar comando
+==85484== 
+==85484== HEAP SUMMARY:
+==85484==     in use at exit: 0 bytes in 0 blocks
+==85484==   total heap usage: 20 allocs, 20 frees, 14,940 bytes allocated
+==85484== 
+==85484== All heap blocks were freed -- no leaks are possible
+==85484== 
+==85484== For lists of detected and suppressed errors, rerun with: -s
+==85484== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+saida=1
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit status --short banker.c[27m
+[7mgit show HEAD:banker.c | grep -c liberar_matriz[27m[Agit status --short banker.c
+git show HEAD:banker.c | grep -c liberar_matriz
+[?2004l [31mM[m banker.c
+0
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmkdir -p /tmp/t_err2 && printf '7,5,3\n3,2\n9,0,2\n' > /tmp/t_err2/customer.txt && cp commands.txt /tmp/t_err2/[27m
+[7m(cd /tmp/t_err2 && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p /tmp/t_err2 && printf '7,5,3\n3,2\n9,0,2\n' > /tmp/t_err2/customer.txt && cp commands.txt /tmp/t_err2/
+(cd /tmp/t_err2 && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")
+[?2004l==86232== Memcheck, a memory error detector
+==86232== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==86232== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==86232== Command: /home/racarrilho/dev/banker/banker 10 5 7
+==86232== 
+
+Clientes : 3
+Erro nos dados do cliente 1
+==86232== 
+==86232== HEAP SUMMARY:
+==86232==     in use at exit: 0 bytes in 0 blocks
+==86232==   total heap usage: 10 allocs, 10 frees, 10,232 bytes allocated
+==86232== 
+==86232== All heap blocks were freed -- no leaks are possible
+==86232== 
+==86232== For lists of detected and suppressed errors, rerun with: -s
+==86232== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+saida=1
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27m
+[7mgit diff --cached --stat[27m
+[7mgit commit -m "Junta a liberacao de matrizes em liberar_matriz"[27m
+[7mgit push origin main[27m[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git add banker.c
+git diff --cached --stat
+git commit -m "Junta a liberacao de matrizes em liberar_matriz"
+git push origin main
+[?2004l[?1h= banker.c | 78 [32m+++++++++++++++++++++++++[m[31m-----------------------------------------------------[m[m
+ 1 file changed, 25 insertions(+), 53 deletions(-)[m
+[K[?1l>[main 514b8a1] Junta a liberacao de matrizes em liberar_matriz
+ 1 file changed, 25 insertions(+), 53 deletions(-)
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 576 bytes | 576.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   de925ff..514b8a1  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker[27m
+[7mmkdir -p /tmp/t_rq2 && cp customer.txt /tmp/t_rq2/ && printf 'RQ 0 0 2 1\nRQ 2 3 0 2\nRQ 1 2 0 0\nRQ 4 0 0 2\nRQ 3 2 1 1\nRQ 4 4 0 0\nRQ 2 0 1 0' > /tmp/t_rq2/commands.txt[27m
+[7m(cd /tmp/t_rq2 && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+mkdir -p /tmp/t_rq2 && cp customer.txt /tmp/t_rq2/ && printf 'RQ 0 0 2 1\nRQ 2 3 0 2\nRQ 1 2 0 0\nRQ 4 0 0 2\nRQ 3 2 1 1\nRQ 4 4 0 0\nRQ 2 0 1 0' > /tmp/t_rq2/commands.txt
+(cd /tmp/t_rq2 && valgrind --leak-check=full ~/dev/banker/banker 10 5 7; echo "saida=$?")
+[?2004l==92678== Memcheck, a memory error detector
+==92678== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==92678== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==92678== Command: /home/racarrilho/dev/banker/banker 10 5 7
+==92678== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 0 | Recursos: 0 2 1
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 2 | Recursos: 3 0 2
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 1 | Recursos: 2 0 0
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 4 | Recursos: 0 0 2
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 3 | Recursos: 2 1 1
+Comando interpretado: RQ
+Recursos insuficientes
+Comando interpretado: RQ
+Pedido excede o limite do cliente
+==92678== 
+==92678== HEAP SUMMARY:
+==92678==     in use at exit: 0 bytes in 0 blocks
+==92678==   total heap usage: 30 allocs, 30 frees, 15,100 bytes allocated
+==92678== 
+==92678== All heap blocks were freed -- no leaks are possible
+==92678== 
+==92678== For lists of detected and suppressed errors, rerun with: -s
+==92678== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+saida=0
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ dat4[Ke
+[?2004lMon Nov 16 17:19:44 -03 2026
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27mgit add banker.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27mgit diff --cached --stat
+[?2004l[?1h= banker.c | 78 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m-[m[m
+ 1 file changed, 77 insertions(+), 1 deletion(-)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit status[27mgit status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   banker.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mcommands.txt[m
+	[31mcustomer.txt[m
+	[31mevidencias.log[m
+	[31mresult.expected.txt[m
+	[31mresult.txt[m
+	[31mrevisao.patch[m
+	[31mteste[m
+	[31mteste.c[m
+	[31mteste_instavel[m
+	[31mteste_instavel.c[m
+	[31mteste_parser[m
+	[31mteste_parser.c[m
+
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Implementa RQ: checa need, available e estado seguro"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "Implementa RQ: checa need, available e estado seguro"
+[?2004l[main 9dd7150] Implementa RQ: checa need, available e estado seguro
+ 1 file changed, 77 insertions(+), 1 deletion(-)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit push origin main[27mgit push origin main
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 966 bytes | 966.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   514b8a1..9dd7150  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mls -lh evidencias.log[27m
+[7mtail -n 10 evidencias.log[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ls -lh evidencias.log
+tail -n 10 evidencias.log
+[?2004l-rw-r--r-- 1 racarrilho racarrilho 86K Nov 16 17:22 evidencias.log
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 966 bytes | 966.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   514b8a1..9dd7150  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mls -lh evidencias.log[27m
+[7mtail -n 10 evidencias.log[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ls -lh evidencias.log
+tail -n 10 evidencias.log
+[?2004l-rw-r--r-- 1 racarrilho racarrilho 86K Nov 16 17:22 evidencias.log
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgrep -c "ERROR SUMMARY" evidencias.log[27m
+[7mgrep -n "514b8a1\|de925ff\|e48392e" evidencias.log[27m
+[7mgrep -n "Script started\|Script done" evidencias.log[27m[A[Agrep -c "ERROR SUMMARY" evidencias.log
+grep -n "514b8a1\|de925ff\|e48392e" evidencias.log
+grep -n "Script started\|Script done" evidencias.log
+[?2004l13
+[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[Ke48392e[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[Ke48392e[m[K  main -> main
+[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[Kde925ff[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K979[m[K[36m[K:[m[K   [01;31m[Ke48392e[m[K..[01;31m[Kde925ff[m[K  main -> main
+[32m[K1085[m[K[36m[K:[m[K[K[?1l>[main [01;31m[K514b8a1[m[K] Junta a liberacao de matrizes em liberar_matriz
+[32m[K1095[m[K[36m[K:[m[K   [01;31m[Kde925ff[m[K..[01;31m[K514b8a1[m[K  main -> main
+[32m[K1183[m[K[36m[K:[m[K   [01;31m[K514b8a1[m[K..9dd7150  main -> main
+[32m[K1193[m[K[36m[K:[m[K   [01;31m[K514b8a1[m[K..9dd7150  main -> main
+[32m[K1199[m[K[36m[K:[m[K[7mgrep -n "[01;31m[K514b8a1[m[K\|[01;31m[Kde925ff[m[K\|[01;31m[Ke48392e[m[K" evidencias.log[27m
+[32m[K1201[m[K[36m[K:[m[Kgrep -n "[01;31m[K514b8a1[m[K\|[01;31m[Kde925ff[m[K\|[01;31m[Ke48392e[m[K" evidencias.log
+[32m[K1204[m[K[36m[K:[m[K[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[Ke48392e[m[K[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K1205[m[K[36m[K:[m[K[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[K[01;31m[Ke48392e[m[K[m[K  main -> main
+[32m[K1206[m[K[36m[K:[m[K[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[Kde925ff[m[K[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K1207[m[K[36m[K:[m[K[32m[K979[m[K[36m[K:[m[K   [01;31m[K[01;31m[Ke48392e[m[K[m[K..[01;31m[K[01;31m[Kde925ff[m[K[m[K  main -> main
+[32m[K1208[m[K[36m[K:[m[K[32m[K1085[m[K[36m[K:[m[K[K[?1l>[main [01;31m[K[01;31m[K514b8a1[m[K[m[K] Junta a liberacao de matrizes em liberar_matriz
+[32m[K1209[m[K[36m[K:[m[K[32m[K1095[m[K[36m[K:[m[K   [01;31m[K[01;31m[Kde925ff[m[K[m[K..[01;31m[K[01;31m[K514b8a1[m[K[m[K  main -> main
+[32m[K1210[m[K[36m[K:[m[K[32m[K1183[m[K[36m[K:[m[K   [01;31m[K[01;31m[K514b8a1[m[K[m[K..9dd7150  main -> main
+[32m[K1211[m[K[36m[K:[m[K[32m[K1193[m[K[36m[K:[m[K   [01;31m[K[01;31m[K514b8a1[m[K[m[K..9dd7150  main -> main
+[32m[K1212[m[K[36m[K:[m[K[32m[K1199[m[K[36m[K:[m[K[7mgrep -n "[01;31m[K[01;31m[K514b8a1[m[K[m[K\|[01;31m[K[01;31m[Kde925ff[m[K[m[K\|[01;31m[K[01;31m[Ke48392e[m[K[m[K" evidencias.log[27m
+[32m[K1213[m[K[36m[K:[m[K[32m[K1201[m[K[36m[K:[m[Kgrep -n "[01;31m[K[01;31m[K514b8a1[m[K[m[K\|[01;31m[K[01;31m[Kde925ff[m[K[m[K\|[01;31m[K[01;31m[Ke48392e[m[K[m[K" evidencias.log
+[32m[K1[m[K[36m[K:[m[K[01;31m[KScript started[m[K on 2026-11-16 09:52:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[32m[K49[m[K[36m[K:[m[K[01;31m[KScript done[m[K on 2026-11-16 10:00:30-03:00 [COMMAND_EXIT_CODE="1"]
+[32m[K50[m[K[36m[K:[m[K[01;31m[KScript started[m[K on 2026-11-16 10:00:34-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[32m[K564[m[K[36m[K:[m[K[01;31m[KScript done[m[K on 2026-11-16 12:25:48-03:00 [COMMAND_EXIT_CODE="0"]
+[32m[K565[m[K[36m[K:[m[K[01;31m[KScript started[m[K on 2026-11-16 12:30:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[32m[K1200[m[K[36m[K:[m[K[7mgrep -n "[01;31m[KScript started[m[K\|[01;31m[KScript done[m[K" evidencias.log[27m[A[Agrep -c "ERROR SUMMARY" evidencias.log
+[32m[K1202[m[K[36m[K:[m[Kgrep -n "[01;31m[KScript started[m[K\|[01;31m[KScript done[m[K" evidencias.log
+[32m[K1224[m[K[36m[K:[m[K[32m[K1[m[K[36m[K:[m[K[01;31m[K[01;31m[KScript started[m[K[m[K on 2026-11-16 09:52:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[32m[K1225[m[K[36m[K:[m[K[32m[K49[m[K[36m[K:[m[K[01;31m[K[01;31m[KScript done[m[K[m[K on 2026-11-16 10:00:30-03:00 [COMMAND_EXIT_CODE="1"]
+[32m[K1226[m[K[36m[K:[m[K[32m[K50[m[K[36m[K:[m[K[01;31m[K[01;31m[KScript started[m[K[m[K on 2026-11-16 10:00:34-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="21"]
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mps -ef | grep '[s]cript'[27mps -ef | grep '[s]cript'
+[?2004lroot         126       1  0 09:47 ?        00:00:00 /bin/sh /usr/lib/systemd/[01;31m[Kscript[m[Ks/chronyd-starter.sh -n -F 1
+racarri+     634     633  0 09:47 pts/2    00:00:00 sh -c "$VSCODE_WSL_EXT_LOCATION/[01;31m[Kscript[m[Ks/wslServer.sh" a717861c07586a53d83b80d742cd3f59b20a6273 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=1723206219-4216162871-2433843393-3309545749 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+racarri+     635     634  0 09:47 pts/2    00:00:00 sh /mnt/c/Users/Pichau/.vscode/extensions/ms-vscode-remote.remote-wsl-1.104.7/[01;31m[Kscript[m[Ks/wslServer.sh a717861c07586a53d83b80d742cd3f59b20a6273 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=1723206219-4216162871-2433843393-3309545749 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+racarri+    1680    1585  0 09:51 pts/9    00:00:00 /bin/bash --init-file /home/racarrilho/.vscode-server/bin/a717861c07586a53d83b80d742cd3f59b20a6273/out/vs/workbench/contrib/terminal/common/[01;31m[Kscript[m[Ks/shellIntegration-bash.sh
+racarri+   35863    1680  0 12:30 pts/9    00:00:00 [01;31m[Kscript[m[K -af evidencias.log
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmkdir -p /tmp/teste_rl[27m
+[7mcp customer.txt /tmp/teste_rl/[27m
+
+[7mprintf 'RQ 0 0 2 1\nRL 0 0 1 1\nRL 0 0 2 0\n' > /tmp/teste_rl/commands.txt[27m
+
+[7m(cd /tmp/teste_rl && valgrind --leak-check=full ~/dev/banker/banker 10 5 7)[27m[A[A[A[A[Amkdir -p /tmp/teste_rl
+cp customer.txt /tmp/teste_rl/
+
+printf 'RQ 0 0 2 1\nRL 0 0 1 1\nRL 0 0 2 0\n' > /tmp/teste_rl/commands.txt
+
+(cd /tmp/teste_rl && valgrind --leak-check=full ~/dev/banker/banker 10 5 7)
+[?2004l==96130== Memcheck, a memory error detector
+==96130== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==96130== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==96130== Command: /home/racarrilho/dev/banker/banker 10 5 7
+==96130== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 0 | Recursos: 0 2 1
+Comando interpretado: RL
+Recursos liberados
+Cliente: 0 | Recursos: 0 1 1
+Comando interpretado: RL
+Cliente tentando liberar mais recursos do que possui
+==96130== 
+==96130== HEAP SUMMARY:
+==96130==     in use at exit: 0 bytes in 0 blocks
+==96130==   total heap usage: 22 allocs, 22 frees, 14,972 bytes allocated
+==96130== 
+==96130== All heap blocks were freed -- no leaks are possible
+==96130== 
+==96130== For lists of detected and suppressed errors, rerun with: -s
+==96130== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mcat -A result.expected.txt[27mcat -A result.expected.txt
+[?2004lAllocate to customer 0 the resources 0 2 1$
+Allocate to customer 2 the resources 3 0 2$
+Allocate to customer 1 the resources 2 0 0$
+Allocate to customer 4 the resources 0 0 2$
+Release from customer 0 the resources 0 1 1$
+Allocate to customer 3 the resources 2 1 1$
+MAXIMUM   |   ALLOCATION  |   NEED$
+7 5 3     |   0 1 0       |   7 4 3 $
+3 2 2     |   2 0 0       |   1 2 2 $
+9 0 2     |   3 0 2       |   6 0 0 $
+2 2 2     |   2 1 1       |   0 1 1 $
+4 3 3     |   0 0 2       |   4 3 1 $
+AVAILABLE 3 3 2 $
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 $
+Allocate to customer 1 the resources 1 0 2$
+The customer 0 request 0 2 0 was denied because result in an unsafe state$
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation$
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ datr[Ke
+[?2004lMon Nov 16 17:37:43 -03 2026
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27mgit add banker.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27m
+[7mgit commit -m "Implementa RQ e RL"[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git diff --cached --stat
+git commit -m "Implementa RQ e RL"
+[?2004l[?1h= banker.c | 23 [32m+++++++++++++++++++++++[m[m
+ 1 file changed, 23 insertions(+)[m
+[K[?1l>[main 2724718] Implementa RQ e RL
+ 1 file changed, 23 insertions(+)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit push origin main[27mgit push origin main
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 448 bytes | 448.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   9dd7150..2724718  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker[27m
+[7m./banker 10 5 7; diff result.txt result.expected.txt[27m[Agcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+./banker 10 5 7; diff result.txt result.expected.txt
+[?2004l
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 0 | Recursos: 0 2 1
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 2 | Recursos: 3 0 2
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 1 | Recursos: 2 0 0
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 4 | Recursos: 0 0 2
+Comando interpretado: RL
+Recursos liberados
+Cliente: 0 | Recursos: 0 1 1
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 3 | Recursos: 2 1 1
+Comando interpretado: *
+Comando interpretado: RQ
+Recursos insuficientes
+Comando interpretado: RQ
+Pedido aprovado
+Cliente: 1 | Recursos: 1 0 2
+Comando interpretado: RQ
+Pedido negado: estado inseguro
+Comando interpretado: RQ
+Pedido excede o limite do cliente
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker[27m
+[7m./banker 10 5 7[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+./banker 10 5 7
+[?2004l
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Pedido aprovado
+Comando interpretado: RQ
+Pedido aprovado
+Comando interpretado: RQ
+Pedido aprovado
+Comando interpretado: RQ
+Pedido aprovado
+Comando interpretado: RL
+Recursos liberados
+Comando interpretado: RQ
+Pedido aprovado
+Comando interpretado: *
+MAXIMUM   |   ALLOCATION  |   NEED
+7 5 3     |   0 1 0       |   7 4 3 
+3 2 2     |   2 0 0       |   1 2 2 
+9 0 2     |   3 0 2       |   6 0 0 
+2 2 2     |   2 1 1       |   0 1 1 
+4 3 3     |   0 0 2       |   4 3 1 
+AVAILABLE 3 3 2 
+Comando interpretado: RQ
+Recursos insuficientes
+Comando interpretado: RQ
+Pedido aprovado
+Comando interpretado: RQ
+Pedido negado: estado inseguro
+Comando interpretado: RQ
+Pedido excede o limite do cliente
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker[27m
+[7m./banker 10 5 7 > /dev/null; diff result.txt result.expected.txt[27m[Agcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+./banker 10 5 7 > /dev/null; diff result.txt result.expected.txt
+[?2004l0a1,6
+> Allocate to customer 0 the resources 0 2 1
+> Allocate to customer 2 the resources 3 0 2
+> Allocate to customer 1 the resources 2 0 0
+> Allocate to customer 4 the resources 0 0 2
+> Release from customer 0 the resources 0 1 1
+> Allocate to customer 3 the resources 2 1 1
+7a14,17
+> The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+> Allocate to customer 1 the resources 1 0 2
+> The customer 0 request 0 2 0 was denied because result in an unsafe state
+> The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27mgit add banker.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27mgit diff --cached --stat
+[?2004l[?1h= banker.c | 53 [32m++++++++++++++++++++++++++++++++++++++++++++++[m[31m-------[m[m
+ 1 file changed, 46 insertions(+), 7 deletions(-)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Grava a tabela do * em result.txt"[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "Grava a tabela do * em result.txt"
+[A
+[?2004l[main 210dffc] Grava a tabela do * em result.txt
+ 1 file changed, 46 insertions(+), 7 deletions(-)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit push origin main[27mgit push origin main
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 724 bytes | 724.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   2724718..210dffc  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker[27m
+[7m./banker 10 5 7 > /dev/null[27m
+[7mdiff -u result.expected.txt result.txt[27m
+[7mecho $?[27m[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ gcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+./banker 10 5 7 > /dev/null
+diff -u result.expected.txt result.txt
+echo $?
+[?2004l0
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mvalgrind --leak-check=full --show-leak-kinds=all ./banker 10 5 7[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind --leak-check=full --show-leak-kinds=all ./banker 10 5 7
+[?2004l==103234== Memcheck, a memory error detector
+==103234== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==103234== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==103234== Command: ./banker 10 5 7
+==103234== 
+
+Clientes : 5
+Cliente 0: 7 5 3
+Cliente 1: 3 2 2
+Cliente 2: 9 0 2
+Cliente 3: 2 2 2
+Cliente 4: 4 3 3
+Comando interpretado: RQ
+Comando interpretado: RQ
+Comando interpretado: RQ
+Comando interpretado: RQ
+Comando interpretado: RL
+Comando interpretado: RQ
+Comando interpretado: *
+Comando interpretado: RQ
+Comando interpretado: RQ
+Comando interpretado: RQ
+Comando interpretado: RQ
+==103234== 
+==103234== HEAP SUMMARY:
+==103234==     in use at exit: 0 bytes in 0 blocks
+==103234==   total heap usage: 36 allocs, 36 frees, 19,732 bytes allocated
+==103234== 
+==103234== All heap blocks were freed -- no leaks are possible
+==103234== 
+==103234== For lists of detected and suppressed errors, rerun with: -s
+==103234== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mls -la[27mls -la
+[?2004ltotal 288
+drwxr-xr-x 3 racarrilho racarrilho   4096 Nov 16 18:09 [0m[01;34m.[0m
+drwxr-xr-x 5 racarrilho racarrilho   4096 Nov 16 09:47 [01;34m..[0m
+drwxr-xr-x 7 racarrilho racarrilho   4096 Nov 16 17:59 [01;34m.git[0m
+-rw-r--r-- 1 racarrilho racarrilho     11 Nov 16 10:07 .gitignore
+-rw-r--r-- 1 racarrilho racarrilho      0 Nov 16 10:18 Makefile
+-rwxr-xr-x 1 racarrilho racarrilho  35184 Nov 16 18:09 [01;32mbanker[0m
+-rw-r--r-- 1 racarrilho racarrilho  10626 Nov 16 18:09 banker.c
+-rw-r--r-- 1 racarrilho racarrilho    111 Nov 15 20:17 commands.txt
+-rw-r--r-- 1 racarrilho racarrilho     29 Nov 15 20:17 customer.txt
+-rw-r--r-- 1 racarrilho racarrilho 108602 Nov 16 18:11 evidencias.log
+-rw-r--r-- 1 racarrilho racarrilho   2758 Nov 16 15:46 parser.c
+-rw-r--r-- 1 racarrilho racarrilho    181 Nov 16 15:07 parser.h
+-rw-r--r-- 1 racarrilho racarrilho   2872 Nov 16 15:30 parser.o
+-rw-r--r-- 1 racarrilho racarrilho    755 Nov 16 09:58 result.expected.txt
+-rw-r--r-- 1 racarrilho racarrilho    755 Nov 16 18:10 result.txt
+-rw-r--r-- 1 racarrilho racarrilho   3572 Nov 16 12:07 revisao.patch
+-rw-r--r-- 1 racarrilho racarrilho   1392 Nov 16 14:39 seguranca.c
+-rw-r--r-- 1 racarrilho racarrilho    213 Nov 16 14:13 seguranca.h
+-rwxr-xr-x 1 racarrilho racarrilho  20400 Nov 16 14:49 [01;32mteste[0m
+-rw-r--r-- 1 racarrilho racarrilho    610 Nov 16 14:43 teste.c
+-rwxr-xr-x 1 racarrilho racarrilho  20416 Nov 16 14:49 [01;32mteste_instavel[0m
+-rw-r--r-- 1 racarrilho racarrilho    610 Nov 16 14:52 teste_instavel.c
+-rwxr-xr-x 1 racarrilho racarrilho  20008 Nov 16 15:48 [01;32mteste_parser[0m
+-rw-r--r-- 1 racarrilho racarrilho    783 Nov 16 15:46 teste_parser.c
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27mgit add banker.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27mgit diff --cached --stat
+[?2004l[?1h= banker.c | 46 [32m+++++++++++++++++++++++++++++++++++++++++[m[31m-----[m[m
+ 1 file changed, 41 insertions(+), 5 deletions(-)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Grava as mensagens de RQ e RL em result.txt"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "Grava as mensagens de RQ e RL em result.txt"
+[?2004l[main 3affc9f] Grava as mensagens de RQ e RL em result.txt
+ 1 file changed, 41 insertions(+), 5 deletions(-)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit push origin main[27mgit push origin main
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 617 bytes | 617.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   210dffc..3affc9f  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmake clean[27mmake clean
+[?2004lrm -f banker
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmake[27mmake
+[?2004lgcc -Wall -Wextra banker.c parser.c seguranca.c -o banker
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7m./banker 10 5 7 > /dev/null[27m./banker 10 5 7 > /dev/null
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mcmp result.txt result.expected.txt[27mcmp result.txt result.expected.txt
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mecho $?[27mecho $?
+[?2004l0
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmake clean && make && ./banker 10 5 7 > /dev/null && cmp result.txt result.expected.txt && echo $?[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean && make && ./banker 10 5 7 > /dev/null && cmp result.txt result.expected.txt && echo $?
+[?2004lrm -f banker
+gcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+0
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mtouch parser.h && make[27mtouch parser.h && make
+[?2004lgcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add Makefile[27m
+[7mgit diff --cached --stat[27m
+[7mgit commit -m "Adiciona Makefile do banker"[27m
+[7mgit push origin main[27m[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git add Makefile
+git diff --cached --stat
+git commit -m "Adiciona Makefile do banker"
+git push origin main
+[?2004l[?1h= Makefile | 6 [32m++++++[m[m
+ 1 file changed, 6 insertions(+)[m
+[K[?1l>[main 8809030] Adiciona Makefile do banker
+ 1 file changed, 6 insertions(+)
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 372 bytes | 372.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/RafaCarrilho/banker.git
+   3affc9f..8809030  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmake clean && make[27m
+[7m./banker 10 5 7[27m
+[7mdiff -u result.expected.txt result.txt[27m
+[7mecho $?[27m
+[7mvalgrind --leak-check=full ./banker 10 5 7[27m[A[A[A[Amake clean && make
+./banker 10 5 7
+diff -u result.expected.txt result.txt
+echo $?
+valgrind --leak-check=full ./banker 10 5 7
+[?2004lrm -f banker
+gcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+0
+==108166== Memcheck, a memory error detector
+==108166== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==108166== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==108166== Command: ./banker 10 5 7
+==108166== 
+==108166== 
+==108166== HEAP SUMMARY:
+==108166==     in use at exit: 0 bytes in 0 blocks
+==108166==   total heap usage: 35 allocs, 35 frees, 18,708 bytes allocated
+==108166== 
+==108166== All heap blocks were freed -- no leaks are possible
+==108166== 
+==108166== For lists of detected and suppressed errors, rerun with: -s
+==108166== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7m./banker[27m
+[7m./banker abc 5 7[27m
+[7m./banker -1 5 7[27m
+[7m./banker 10 5[27m[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ./banker
+./banker abc 5 7
+./banker -1 5 7
+./banker 10 5
+[?2004lError: missing resource arguments
+Error: argument is not a number
+Error: resource values cannot be negative
+Error: invalid data for customer 0
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmkdir -p /tmp/banker-erros[27m
+[7mcp banker customer.txt commands.txt /tmp/banker-erros/[27m
+[7mcd /tmp/banker-erros[27m
+
+[7m./banker 10 5 7[27m
+[7mecho "Caso normal: $?"[27m
+
+[7mmv customer.txt customer.bak[27m
+[7m./banker 10 5 7[27m
+[7mecho "Customer ausente: $?"[27m
+[7mmv customer.bak customer.txt[27m
+
+[7mmv commands.txt commands.bak[27m
+[7m./banker 10 5 7[27m
+[7mecho "Commands ausente: $?"[27m
+[7mmv commands.bak commands.txt[27m
+
+[7m: > customer.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "Customer vazio: $?"[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ mkdir -p /tmp/banker-erros
+cp banker customer.txt commands.txt /tmp/banker-erros/
+cd /tmp/banker-erros
+
+./banker 10 5 7
+echo "Caso normal: $?"
+
+mv customer.txt customer.bak
+./banker 10 5 7
+echo "Customer ausente: $?"
+mv customer.bak customer.txt
+
+mv commands.txt commands.bak
+./banker 10 5 7
+echo "Commands ausente: $?"
+mv commands.bak commands.txt
+
+: > customer.txt
+./banker 10 5 7
+echo "Customer vazio: $?"
+[?2004lCaso normal: 0
+Error: could not open customer.txt
+Customer ausente: 1
+Error: could not open commands.txt
+Commands ausente: 1
+Error: customer.txt is empty
+Customer vazio: 1
+[?2004h]0;racarrilho@DESKTOP-794TA68: /tmp/banker-erros[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m/tmp/banker-erros[00m$ [7mcp ~/dev/banker/customer.txt .[27m
+[7mcp ~/dev/banker/commands.txt .[27m
+
+[7mprintf '7,5,abc\n' > customer.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "Customer malformado: $?"[27m
+
+[7mcp ~/dev/banker/customer.txt .[27m
+
+[7mprintf 'RQ 0 1 abc 2\n' > commands.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "Comando malformado: $?"[27m
+
+[7mprintf 'RQ 99 0 1 0\n' > commands.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "Cliente inexistente: $?"[27m
+
+[7mprintf '\n' > commands.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "Linha em branco: $?"[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;racarrilho@DESKTOP-794TA68: /tmp/banker-erros[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m/tmp/banker-erros[00m$ cp ~/dev/banker/customer.txt .
+cp ~/dev/banker/commands.txt .
+
+printf '7,5,abc\n' > customer.txt
+./banker 10 5 7
+echo "Customer malformado: $?"
+
+cp ~/dev/banker/customer.txt .
+
+printf 'RQ 0 1 abc 2\n' > commands.txt
+./banker 10 5 7
+echo "Comando malformado: $?"
+
+printf 'RQ 99 0 1 0\n' > commands.txt
+./banker 10 5 7
+echo "Cliente inexistente: $?"
+
+printf '\n' > commands.txt
+./banker 10 5 7
+echo "Linha em branco: $?"
+[?2004lError: invalid data for customer 0
+Customer malformado: 1
+Error: invalid command format
+Comando malformado: 1
+Error: invalid customer 99
+Cliente inexistente: 1
+Error: invalid command format
+Linha em branco: 1
+[?2004h]0;racarrilho@DESKTOP-794TA68: /tmp/banker-erros[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m/tmp/banker-erros[00m$ [7mvalgrind --leak-check=full --error-exitcode=99 ./banker 10 5 7[27m
+[7mecho "Valgrind: $?"[27m
+
+[7mcd ~/dev/banker[27m
+[7mgit status --short[27m[A[A[A[A]0;racarrilho@DESKTOP-794TA68: /tmp/banker-erros[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m/tmp/banker-erros[00m$ valgrind --leak-check=full --error-exitcode=99 ./banker 10 5 7
+echo "Valgrind: $?"
+
+cd ~/dev/banker
+git status --short
+[?2004l==109000== Memcheck, a memory error detector
+==109000== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==109000== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==109000== Command: ./banker 10 5 7
+==109000== 
+Error: invalid command format
+==109000== 
+==109000== HEAP SUMMARY:
+==109000==     in use at exit: 0 bytes in 0 blocks
+==109000==   total heap usage: 20 allocs, 20 frees, 14,388 bytes allocated
+==109000== 
+==109000== All heap blocks were freed -- no leaks are possible
+==109000== 
+==109000== For lists of detected and suppressed errors, rerun with: -s
+==109000== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Valgrind: 1
+ [31mM[m banker.c
+[31m??[m commands.txt
+[31m??[m customer.txt
+[31m??[m evidencias.log
+[31m??[m result.expected.txt
+[31m??[m result.txt
+[31m??[m revisao.patch
+[31m??[m teste
+[31m??[m teste.c
+[31m??[m teste_instavel
+[31m??[m teste_instavel.c
+[31m??[m teste_parser
+[31m??[m teste_parser.c
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit add banker.c[27mgit add banker.c
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit diff --cached --stat[27mgit diff --cached --stat
+[?2004l[?1h= banker.c | 71 [32m++++++++++++++++++++++++++++++++++++[m[31m-----------------------------------[m[m
+ 1 file changed, 36 insertions(+), 35 deletions(-)[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Melhora o tratamento de erros e remove prints de debug"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "Melhora o tratamento de erros e remove prints de debug"
+[?2004l[main 5cd092e] Melhora o tratamento de erros e remove prints de debug
+ 1 file changed, 36 insertions(+), 35 deletions(-)
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit push origin main[27mgit push origin main
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 849 bytes | 849.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/RafaCarrilho/banker.git
+   8809030..5cd092e  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mcd /tmp/banker-erros[27m
+
+[7mcp ~/dev/banker/customer.txt .[27m
+[7mcp ~/dev/banker/commands.txt .[27m
+
+[7mprintf 'RQ 0 -1 0 0\n' > commands.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "RQ negativo: $?"[27m
+
+[7mprintf 'RL 0 -1 0 0\n' > commands.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "RL negativo: $?"[27m
+
+[7mcp ~/dev/banker/commands.txt .[27m
+
+[7mprintf '%s\n' '-7,5,3' '3,2,2' '9,0,2' '2,2,2' '4,3,3' > customer.txt[27m
+[7m./banker 10 5 7[27m
+[7mecho "Maximum negativo: $?"[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ cd /tmp/banker-erros
+
+cp ~/dev/banker/customer.txt .
+cp ~/dev/banker/commands.txt .
+
+printf 'RQ 0 -1 0 0\n' > commands.txt
+./banker 10 5 7
+echo "RQ negativo: $?"
+
+printf 'RL 0 -1 0 0\n' > commands.txt
+./banker 10 5 7
+echo "RL negativo: $?"
+
+cp ~/dev/banker/commands.txt .
+
+printf '%s\n' '-7,5,3' '3,2,2' '9,0,2' '2,2,2' '4,3,3' > customer.txt
+./banker 10 5 7
+echo "Maximum negativo: $?"
+[?2004lError: invalid command format
+RQ negativo: 1
+Error: invalid command format
+RL negativo: 1
+Error: invalid data for customer 0
+Maximum negativo: 1
+[?2004h]0;racarrilho@DESKTOP-794TA68: /tmp/banker-erros[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m/tmp/banker-erros[00m$ [7mcd ~/dev/banker[27mcd ~/dev/banker
+[?2004l[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit status --short[27m
+[7mgit diff --check[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git status --short
+git diff --check
+[?2004l[31m??[m commands.txt
+[31m??[m customer.txt
+[31m??[m evidencias.log
+[31m??[m result.expected.txt
+[31m??[m result.txt
+[31m??[m revisao.patch
+[31m??[m teste
+[31m??[m teste.c
+[31m??[m teste_instavel
+[31m??[m teste_instavel.c
+[31m??[m teste_parser
+[31m??[m teste_parser.c
+[?1h=[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit log -1 --oneline[27m
+[7mcat .gitignore[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ git log -1 --oneline
+cat .gitignore
+[?2004l[?1h=[33m5cd092e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Melhora o tratamento de erros e remove prints de debug[m
+[K[?1l>/banker
+*.o[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mps -ef | grep '[s]cript'[27m
+[7mwc -l evidencias.log[27m[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ps -ef | grep '[s]cript'
+wc -l evidencias.log
+[?2004lroot         126       1  0 09:47 ?        00:00:00 /bin/sh /usr/lib/systemd/[01;31m[Kscript[m[Ks/chronyd-starter.sh -n -F 1
+racarri+     634     633  0 09:47 pts/2    00:00:00 sh -c "$VSCODE_WSL_EXT_LOCATION/[01;31m[Kscript[m[Ks/wslServer.sh" a717861c07586a53d83b80d742cd3f59b20a6273 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=1723206219-4216162871-2433843393-3309545749 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+racarri+     635     634  0 09:47 pts/2    00:00:00 sh /mnt/c/Users/Pichau/.vscode/extensions/ms-vscode-remote.remote-wsl-1.104.7/[01;31m[Kscript[m[Ks/wslServer.sh a717861c07586a53d83b80d742cd3f59b20a6273 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=1723206219-4216162871-2433843393-3309545749 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+racarri+    1680    1585  0 09:51 pts/9    00:00:00 /bin/bash --init-file /home/racarrilho/.vscode-server/bin/a717861c07586a53d83b80d742cd3f59b20a6273/out/vs/workbench/contrib/terminal/common/[01;31m[Kscript[m[Ks/shellIntegration-bash.sh
+racarri+   35863    1680  0 12:30 pts/9    00:00:00 [01;31m[Kscript[m[K -af evidencias.log
+1801 evidencias.log
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mrm -rf /tmp/vg && mkdir /tmp/vg && cp ~/dev/banker/{banker,customer.txt,commands.txt} /tmp/vg/[27m
+[7m([27m
+[7mcd /tmp/vg[27m
+[7mvg() { echo "== $1"; shift; valgrind -q --leak-check=full --error-exitcode=99 "$@" >/dev/null; echo "saida=$?"; }[27m
+
+[7mvg "arg 5x"            ./banker 5x 5 7[27m
+[7mvg "arg gigante"       ./banker 99999999999 5 7[27m
+[7mvg "arg vazio"         ./banker "" 5 7[27m
+[7mvg "arg negativo"      ./banker -1 5 7[27m
+[7mvg "sem args"          ./banker[27m
+[7mvg "args a menos"      ./banker 10 5[27m
+
+[7mmv customer.txt c.bak; vg "sem customer" ./banker 10 5 7; mv c.bak customer.txt[27m
+[7mmv commands.txt m.bak; vg "sem commands" ./banker 10 5 7; mv m.bak commands.txt[27m
+[7m: > customer.txt.v; cp customer.txt c.bak; : > customer.txt; vg "customer vazio" ./banker 10 5 7; cp c.bak customer.txt[27m
+[7m)[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ rm -rf /tmp/vg && mkdir /tmp/vg && cp ~/dev/banker/{banker,customer.txt,commands.txt} /tmp/vg/
+(
+cd /tmp/vg
+vg() { echo "== $1"; shift; valgrind -q --leak-check=full --error-exitcode=99 "$@" >/dev/null; echo "saida=$?"; }
+
+vg "arg 5x"            ./banker 5x 5 7
+vg "arg gigante"       ./banker 99999999999 5 7
+vg "arg vazio"         ./banker "" 5 7
+vg "arg negativo"      ./banker -1 5 7
+vg "sem args"          ./banker
+vg "args a menos"      ./banker 10 5
+
+mv customer.txt c.bak; vg "sem customer" ./banker 10 5 7; mv c.bak customer.txt
+mv commands.txt m.bak; vg "sem commands" ./banker 10 5 7; mv m.bak commands.txt
+: > customer.txt.v; cp customer.txt c.bak; : > customer.txt; vg "customer vazio" ./banker 10 5 7; cp c.bak customer.txt
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P/ (
+cd /tmp/vg
+vg() { echo "== $1"; shift; valgrind -q --leak-check=full --error-exitcode=99 "$@" >/dev/null; echo "saida=$?"; }
+                                                                                                                 
+vg "arg 5x"            ./banker 5x 5 7
+[C[C[C[C[C[C[C[C[9@gigante"       ./banker 99999999999
+[C[C[C[C[C[C[C[C[9Pvazio"         ./banker ""
+[C[C[C[C[C[C[C[Cnegativo"      ./banker -1
+[C[C[C[C[7Psem args"          ./banker
+[C[C[C[Cargs a menos"      ./banker 10 5
+                                    
+mv customer.txt c.bak; vg "sem customer" ./banker 10 5 7; mv c.bak customer.txt
+[C[C[C[Commands.txt m.bak; vg "sem commands" ./banker 10 5 7; mv m.bak commands
+[49P: > customer.txt.v; cp custome
+[K[A[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cd /tmp/vg
+vg() { echo "== $1"; shift; valgrind -q --leak-check=full --error-exitcode=99 "$@" >/dev/null; echo "saida=$?"; }
+                                                                                                                 
+vg "arg 5x"            ./banker 5x 5 7
+[C[C[C[C[C[C[C[C[9@gigante"       ./banker 99999999999
+[C[C[C[C[C[C[C[C[9Pvazio"         ./banker ""
+[C[C[C[C[C[C[C[Cnegativo"      ./banker -1
+[C[C[C[C[7Psem args"          ./banker
+[C[C[C[Cargs a menos"      ./banker 10 5
+                                    
+mv customer.txt c.bak; vg "sem customer" ./banker 10 5 7; mv c.bak customer.txt
+[C[C[C[Commands.txt m.bak; vg "sem commands" ./banker 10 5 7; mv m.bak commands
+[49P: > customer.txt.v; cp custome
+[K[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1Pg vg() { echo "== $1"; shift; valgrind -q --leak-check=full --error-exitcode=99 "$@" >/dev/null; echo "saida=$?"; }
+                                                                                                                 
+vg "arg 5x"            ./banker 5x 5 7
+[C[C[C[C[C[C[C[C[9@gigante"       ./banker 99999999999
+[C[C[C[C[C[C[C[C[9Pvazio"         ./banker ""
+[C[C[C[C[C[C[C[Cnegativo"      ./banker -1
+[C[C[C[C[7Psem args"          ./banker
+[C[C[C[Cargs a menos"      ./banker 10 5
+                                    
+mv customer.txt c.bak; vg "sem customer" ./banker 10 5 7; mv c.bak customer.txt
+[C[C[C[Commands.txt m.bak; vg "sem commands" ./banker 10 5 7; mv m.bak commands
+[49P: > customer.txt.v; cp custome
+[K[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1Pwc -l evidencias.log[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5[27m
+[7mgrep -n "git commit" evidencias.log | tail -5[27m
+[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+grep -n "git commit" evidencias.log | tail -5
+grep -n "result.expected.txt" evidencias.log | tail -5
+[?2004l1469:==103234== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+1572:==108166== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+1700:==109000== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+1883:[K[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5[27m
+1885:[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+1529:[7mgit commit -m "Adiciona Makefile do banker"[27m
+1532:git commit -m "Adiciona Makefile do banker"
+1719:[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Melhora o tratamento de erros e remove prints de debug"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "Melhora o tratamento de erros e remove prints de debug"
+1884:[7mgrep -n "git commit" evidencias.log | tail -5[27m
+1886:grep -n "git commit" evidencias.log | tail -5
+1706:[31m??[m result.expected.txt
+1780:[31m??[m result.expected.txt
+1885:[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+1887:grep -n "result.expected.txt" evidencias.log | tail -5
+1892:1885:[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgrep -an "git commit" evidencias.log | tail -5[27m
+[7mgrep -an "result.expected.txt" evidencias.log | tail -5[27m
+[7mgrep -an "ERROR SUMMARY" evidencias.log | tail -5[27m[A[Agrep -an "git commit" evidencias.log | tail -5
+grep -an "result.expected.txt" evidencias.log | tail -5
+grep -an "ERROR SUMMARY" evidencias.log | tail -5
+[?2004l1895:1719:[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgit commit -m "Melhora o tratamento de erros e remove prints de debug"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "Melhora o tratamento de erros e remove prints de debug"
+1896:1884:[7mgrep -n "git commit" evidencias.log | tail -5[27m
+1897:1886:grep -n "git commit" evidencias.log | tail -5
+1903:[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mgrep -an "git commit" evidencias.log | tail -5[27m
+1905:[7mgrep -an "ERROR SUMMARY" evidencias.log | tail -5[27m[A[Agrep -an "git commit" evidencias.log | tail -5
+1900:1885:[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+1901:1887:grep -n "result.expected.txt" evidencias.log | tail -5
+1902:1892:1885:[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+1904:[7mgrep -an "result.expected.txt" evidencias.log | tail -5[27m
+1906:grep -an "result.expected.txt" evidencias.log | tail -5
+1905:[7mgrep -an "ERROR SUMMARY" evidencias.log | tail -5[27m[A[Agrep -an "git commit" evidencias.log | tail -5
+1907:grep -an "ERROR SUMMARY" evidencias.log | tail -5
+1912:1905:[7mgrep -an "ERROR SUMMARY" evidencias.log | tail -5[27m[A[Agrep -an "git commit" evidencias.log | tail -5
+1913:1900:1885:[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+1915:1902:1892:1885:[7mgrep -n "result.expected.txt" evidencias.log | tail -5[27m[A[Agrep -n "ERROR SUMMARY: 0 errors" evidencias.log | tail -5
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [200~cd ~/dev/banker
+[?2004l[200~cd: command not found
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ grep -c "ERROR SUMMARY" evidencias.log
+[?2004l38
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ grep -n -E "514b8a1|de925ff|e48392e" evidencias.log
+[?2004l[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[Ke48392e[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[Ke48392e[m[K  main -> main
+[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[Kde925ff[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K979[m[K[36m[K:[m[K   [01;31m[Ke48392e[m[K..[01;31m[Kde925ff[m[K  main -> main
+[32m[K1085[m[K[36m[K:[m[K[K[?1l>[main [01;31m[K514b8a1[m[K] Junta a liberacao de matrizes em liberar_matriz
+[32m[K1095[m[K[36m[K:[m[K   [01;31m[Kde925ff[m[K..[01;31m[K514b8a1[m[K  main -> main
+[32m[K1183[m[K[36m[K:[m[K   [01;31m[K514b8a1[m[K..9dd7150  main -> main
+[32m[K1193[m[K[36m[K:[m[K   [01;31m[K514b8a1[m[K..9dd7150  main -> main
+[32m[K1199[m[K[36m[K:[m[K[7mgrep -n "[01;31m[K514b8a1[m[K\|[01;31m[Kde925ff[m[K\|[01;31m[Ke48392e[m[K" evidencias.log[27m
+[32m[K1201[m[K[36m[K:[m[Kgrep -n "[01;31m[K514b8a1[m[K\|[01;31m[Kde925ff[m[K\|[01;31m[Ke48392e[m[K" evidencias.log
+[32m[K1204[m[K[36m[K:[m[K[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[Ke48392e[m[K[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K1205[m[K[36m[K:[m[K[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[K[01;31m[Ke48392e[m[K[m[K  main -> main
+[32m[K1206[m[K[36m[K:[m[K[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[Kde925ff[m[K[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K1207[m[K[36m[K:[m[K[32m[K979[m[K[36m[K:[m[K   [01;31m[K[01;31m[Ke48392e[m[K[m[K..[01;31m[K[01;31m[Kde925ff[m[K[m[K  main -> main
+[32m[K1208[m[K[36m[K:[m[K[32m[K1085[m[K[36m[K:[m[K[K[?1l>[main [01;31m[K[01;31m[K514b8a1[m[K[m[K] Junta a liberacao de matrizes em liberar_matriz
+[32m[K1209[m[K[36m[K:[m[K[32m[K1095[m[K[36m[K:[m[K   [01;31m[K[01;31m[Kde925ff[m[K[m[K..[01;31m[K[01;31m[K514b8a1[m[K[m[K  main -> main
+[32m[K1210[m[K[36m[K:[m[K[32m[K1183[m[K[36m[K:[m[K   [01;31m[K[01;31m[K514b8a1[m[K[m[K..9dd7150  main -> main
+[32m[K1211[m[K[36m[K:[m[K[32m[K1193[m[K[36m[K:[m[K   [01;31m[K[01;31m[K514b8a1[m[K[m[K..9dd7150  main -> main
+[32m[K1212[m[K[36m[K:[m[K[32m[K1199[m[K[36m[K:[m[K[7mgrep -n "[01;31m[K[01;31m[K514b8a1[m[K[m[K\|[01;31m[K[01;31m[Kde925ff[m[K[m[K\|[01;31m[K[01;31m[Ke48392e[m[K[m[K" evidencias.log[27m
+[32m[K1213[m[K[36m[K:[m[K[32m[K1201[m[K[36m[K:[m[Kgrep -n "[01;31m[K[01;31m[K514b8a1[m[K[m[K\|[01;31m[K[01;31m[Kde925ff[m[K[m[K\|[01;31m[K[01;31m[Ke48392e[m[K[m[K" evidencias.log
+[32m[K1214[m[K[36m[K:[m[K[32m[K1204[m[K[36m[K:[m[K[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K1215[m[K[36m[K:[m[K[32m[K1205[m[K[36m[K:[m[K[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K  main -> main
+[32m[K1216[m[K[36m[K:[m[K[32m[K1206[m[K[36m[K:[m[K[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K1217[m[K[36m[K:[m[K[32m[K1207[m[K[36m[K:[m[K[32m[K979[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K..[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K  main -> main
+[32m[K1218[m[K[36m[K:[m[K[32m[K1208[m[K[36m[K:[m[K[32m[K1085[m[K[36m[K:[m[K[K[?1l>[main [01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K] Junta a liberacao de matrizes em liberar_matriz
+[32m[K1219[m[K[36m[K:[m[K[32m[K1209[m[K[36m[K:[m[K[32m[K1095[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K..[01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K  main -> main
+[32m[K1220[m[K[36m[K:[m[K[32m[K1210[m[K[36m[K:[m[K[32m[K1183[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K..9dd7150  main -> main
+[32m[K1221[m[K[36m[K:[m[K[32m[K1211[m[K[36m[K:[m[K[32m[K1193[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K..9dd7150  main -> main
+[32m[K1222[m[K[36m[K:[m[K[32m[K1212[m[K[36m[K:[m[K[32m[K1199[m[K[36m[K:[m[K[7mgrep -n "[01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K" evidencias.log[27m
+[32m[K1223[m[K[36m[K:[m[K[32m[K1213[m[K[36m[K:[m[K[32m[K1201[m[K[36m[K:[m[Kgrep -n "[01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K" evidencias.log
+[32m[K1928[m[K[36m[K:[m[K[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ grep -n -E "[01;31m[K514b8a1[m[K|[01;31m[Kde925ff[m[K|[01;31m[Ke48392e[m[K" evidencias.log
+[32m[K1929[m[K[36m[K:[m[K[?2004l[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[Ke48392e[m[K[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K1930[m[K[36m[K:[m[K[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[K[01;31m[Ke48392e[m[K[m[K  main -> main
+[32m[K1931[m[K[36m[K:[m[K[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[Kde925ff[m[K[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K1932[m[K[36m[K:[m[K[32m[K979[m[K[36m[K:[m[K   [01;31m[K[01;31m[Ke48392e[m[K[m[K..[01;31m[K[01;31m[Kde925ff[m[K[m[K  main -> main
+[32m[K1933[m[K[36m[K:[m[K[32m[K1085[m[K[36m[K:[m[K[K[?1l>[main [01;31m[K[01;31m[K514b8a1[m[K[m[K] Junta a liberacao de matrizes em liberar_matriz
+[32m[K1934[m[K[36m[K:[m[K[32m[K1095[m[K[36m[K:[m[K   [01;31m[K[01;31m[Kde925ff[m[K[m[K..[01;31m[K[01;31m[K514b8a1[m[K[m[K  main -> main
+[32m[K1935[m[K[36m[K:[m[K[32m[K1183[m[K[36m[K:[m[K   [01;31m[K[01;31m[K514b8a1[m[K[m[K..9dd7150  main -> main
+[32m[K1936[m[K[36m[K:[m[K[32m[K1193[m[K[36m[K:[m[K   [01;31m[K[01;31m[K514b8a1[m[K[m[K..9dd7150  main -> main
+[32m[K1937[m[K[36m[K:[m[K[32m[K1199[m[K[36m[K:[m[K[7mgrep -n "[01;31m[K[01;31m[K514b8a1[m[K[m[K\|[01;31m[K[01;31m[Kde925ff[m[K[m[K\|[01;31m[K[01;31m[Ke48392e[m[K[m[K" evidencias.log[27m
+[32m[K1938[m[K[36m[K:[m[K[32m[K1201[m[K[36m[K:[m[Kgrep -n "[01;31m[K[01;31m[K514b8a1[m[K[m[K\|[01;31m[K[01;31m[Kde925ff[m[K[m[K\|[01;31m[K[01;31m[Ke48392e[m[K[m[K" evidencias.log
+[32m[K1939[m[K[36m[K:[m[K[32m[K1204[m[K[36m[K:[m[K[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K1940[m[K[36m[K:[m[K[32m[K1205[m[K[36m[K:[m[K[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K  main -> main
+[32m[K1941[m[K[36m[K:[m[K[32m[K1206[m[K[36m[K:[m[K[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K1942[m[K[36m[K:[m[K[32m[K1207[m[K[36m[K:[m[K[32m[K979[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K..[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K  main -> main
+[32m[K1943[m[K[36m[K:[m[K[32m[K1208[m[K[36m[K:[m[K[32m[K1085[m[K[36m[K:[m[K[K[?1l>[main [01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K] Junta a liberacao de matrizes em liberar_matriz
+[32m[K1944[m[K[36m[K:[m[K[32m[K1209[m[K[36m[K:[m[K[32m[K1095[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K..[01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K  main -> main
+[32m[K1945[m[K[36m[K:[m[K[32m[K1210[m[K[36m[K:[m[K[32m[K1183[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K..9dd7150  main -> main
+[32m[K1946[m[K[36m[K:[m[K[32m[K1211[m[K[36m[K:[m[K[32m[K1193[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K..9dd7150  main -> main
+[32m[K1947[m[K[36m[K:[m[K[32m[K1212[m[K[36m[K:[m[K[32m[K1199[m[K[36m[K:[m[K[7mgrep -n "[01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K" evidencias.log[27m
+[32m[K1948[m[K[36m[K:[m[K[32m[K1213[m[K[36m[K:[m[K[32m[K1201[m[K[36m[K:[m[Kgrep -n "[01;31m[K[01;31m[K[01;31m[K514b8a1[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K\|[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K" evidencias.log
+[32m[K1949[m[K[36m[K:[m[K[32m[K1214[m[K[36m[K:[m[K[32m[K1204[m[K[36m[K:[m[K[32m[K745[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K[m[K] Feito o parser dos comandos, do cliente e do vetor de valores com tratamento de erro
+[32m[K1950[m[K[36m[K:[m[K[32m[K1215[m[K[36m[K:[m[K[32m[K1205[m[K[36m[K:[m[K[32m[K756[m[K[36m[K:[m[K   9dcb7fc..[01;31m[K[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K[m[K  main -> main
+[32m[K1951[m[K[36m[K:[m[K[32m[K1216[m[K[36m[K:[m[K[32m[K1206[m[K[36m[K:[m[K[32m[K969[m[K[36m[K:[m[K[?2004l[main [01;31m[K[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K[m[K] Cria allocation e le commands.txt com parse_comando
+[32m[K1952[m[K[36m[K:[m[K[32m[K1217[m[K[36m[K:[m[K[32m[K1207[m[K[36m[K:[m[K[32m[K979[m[K[36m[K:[m[K   [01;31m[K[01;31m[K[01;31m[K[01;31m[Ke48392e[m[K[m[K[m[K[m[K..[01;31m[K[01;31m[K[01;31m[K[01;31m[Kde925ff[m[K[m[K[m[K[m[K  main -> main
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ grep -n -E "Script (started|done)" evidencias.log~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KEXI[K[K[Kexit
+[?2004lexit
+
+Script done on 2026-11-16 19:17:11-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-16 22:36:57-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="268" LINES="18"]
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mdate[27m
+[7mmake clean && make && ./banker 10 5 7 && diff -u result.expected.txt result.txt; echo "diff=$?"[27m
+[7mgit status --short banker.c; git log --oneline -1[27m[A[Adate
+make clean && make && ./banker 10 5 7 && diff -u result.expected.txt result.txt; echo "diff=$?"
+git status --short banker.c; git log --oneline -1
+[?2004lMon Nov 16 22:37:02 -03 2026
+rm -f banker
+gcc -g -Wall -Wextra -std=c11 banker.c parser.c seguranca.c -o banker
+diff=0
+[?1h=[33m7f9337a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Adiciona README do projeto[m
+[K[?1l>[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [K]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mmkdir -p ~/banker_fora[27m
+[7mmv revisao.patch teste teste.c teste_instavel teste_instavel.c teste_parser teste_parser.c "README (1).md:Zone.Identifier" ~/banker_fora/[27m
+[7mgit status --short[27m[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ mkdir -p ~/banker_fora
+mv revisao.patch teste teste.c teste_instavel teste_instavel.c teste_parser teste_parser.c "README (1).md:Zone.Identifier" ~/banker_fora/
+git status --short
+[?2004l[31m??[m commands.txt
+[31m??[m customer.txt
+[31m??[m evidencias.log
+[31m??[m result.expected.txt
+[31m??[m result.txt
+[?2004h]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ [7mexit[27m
+[7mgrep -n -E "Script (started|done)" evidencias.log[27m
+[7mls -l evidencias.log[27m[A[A]0;racarrilho@DESKTOP-794TA68: ~/dev/banker[01;32mracarrilho@DESKTOP-794TA68[00m:[01;34m~/dev/banker[00m$ exit
+grep -n -E "Script (started|done)" evidencias.log
+ls -l evidencias.log
+[?2004lexit
+
+Script done on 2026-11-16 22:41:05-03:00 [COMMAND_EXIT_CODE="0"]
